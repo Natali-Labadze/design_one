@@ -1,0 +1,30 @@
+// scroll to top
+function scrollToTop() {
+    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+}
+
+
+// hide or appear search button on scroll
+function searchButtonAppear() {
+    document.getElementById("search_input_hide").classList.toggle("show");
+}
+
+
+
+// header sticky
+
+window.onscroll = function() { myFunction() };
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+
+
+    } else {
+        header.classList.remove("sticky");
+
+    }
+}

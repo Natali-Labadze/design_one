@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>branches</title>
+</head>
+
+<body>
+    <div class="full_overlay" id="myHeader_mobile">
+        <div id="myNav" class="overlay">
+            <div class="overlay_header_top">
+                <span class="closebtn" onclick="closeNav()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                        <g id="Group_65" data-name="Group 65" transform="translate(-37 -50)">
+                          <rect id="Rectangle_204" data-name="Rectangle 204" width="26" height="26" transform="translate(37 50)" fill="rgba(255,255,255,0)"/>
+                          <rect id="Rectangle_289" data-name="Rectangle 289" width="3" height="4" rx="1.5" transform="translate(39 61)" fill="#fff" opacity="0"/>
+                          <rect id="Rectangle_290" data-name="Rectangle 290" width="22" height="4" rx="2" transform="translate(43.828 54) rotate(45)" fill="#fff"/>
+                          <rect id="Rectangle_291" data-name="Rectangle 291" width="22" height="4" rx="2" transform="translate(41 69.556) rotate(-45)" fill="#fff"/>
+                        </g>
+                    </svg> 
+                </span>
+                <img class="logo" id="logo" src="../images/main_icon_formobile_tablet.svg" alt="main_logo">
+                <div class="search_btn" id="search_btn_rem" onclick="AppearSearch()">
+                    <svg id="search-2-line" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path  />
+                    <path id="Path_4" data-name="Path 4" d="M11,2a9,9,0,1,1-9,9A9,9,0,0,1,11,2Zm0,16a7,7,0,1,0-7-7A7,7,0,0,0,11,18Zm8.485.071L22.314,20.9,20.9,22.314l-2.828-2.829,1.414-1.414Z" fill="#777"/>
+                </svg>
+                </div>
+            </div>
+            <ul class="overlay_cols">
+                <li class="overlay_col">
+                    <div class="overlay_title ">
+                        <div class="title_col">
+                            <a class="title_link" href="index.html" target="_blank">მთავარი</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="overlay_col">
+                    <div class="overlay_title ">
+                        <div class="title_col ">
+                            <a class="title_link " href="aboutUs.html" target="_blank">ჩვენს შესახებ</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="overlay_col">
+                    <div class="overlay_title hasOverlayMenu" onclick="unhideDropdown()">
+                        <div class="title_col" onclick="languageMenu()">
+                            <span>პროდუქცია</span>
+                            <span class="arrow_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                                <g id="Group_461" data-name="Group 461" transform="translate(-320 -125)">
+                                  <rect id="Rectangle_292" data-name="Rectangle 292" width="34" height="34" transform="translate(320 125)" fill="rgba(255,255,255,0)"/>
+                                  <g id="Group_460" data-name="Group 460" transform="translate(689.603 66.097) rotate(135)">
+                                    <rect id="Rectangle_282" data-name="Rectangle 282" width="8" height="2" transform="translate(299 197)" fill="#fff"/>
+                                    <rect id="Rectangle_283" data-name="Rectangle 283" width="8" height="2" transform="translate(307 191) rotate(90)" fill="#fff"/>
+                                  </g>
+                                </g>
+                              </svg>                              
+                        </span>
+                        </div>
+                        <ul class="dropdown_list">
+                            <li class="dropdown_li">პროფილები</li>
+                            <li class="dropdown_li">აქსესუარები</li>
+                            <li class="dropdown_li">კუთხოვანი</li>
+                            <li class="dropdown_li">დუბელი</li>
+                            <li class="dropdown_li">სჭვალი</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="overlay_col">
+                    <div class="overlay_title">
+                        <div class="title_col">
+                            <a class="title_link" href="photoGallery.html" target="_blank">ფოტოგალერეა</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="overlay_col">
+                    <div class="overlay_title">
+                        <div class="title_col">
+                            <a class="title_link" href="videoGallery.html" target="_blank">ვიდეოგალერეა</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="overlay_col">
+                    <div class="overlay_title">
+                        <div class="title_col">
+                            <a class="title_link" href="partners.html" target="_blank">პარტნიორები</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="overlay_col">
+                    <div class="overlay_title">
+                        <div class="title_col">
+                            <a class="title_link" href="branches.html" target="_blank">ფილიალები</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="overlay_col">
+                    <div class="overlay_title">
+                        <div class="title_col">
+                            <a class="title_link" href="contact.html" target="_blank">კონტაქტი</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="overlay_language" id="overlay_language">
+                <ul class="language_list">
+                    <li class="language_li"><a class="language_link" href="#"><span class="active">GEO</span></a></li>
+                    <li class="language_li"><a class="language_link" href="#"><span>ENG</span></a></li>
+                    <li class="language_li"><a class="language_link" href="#"><span>RUS</span></a></li>
+                </ul>
+            </div>
+            <nav class="overlay_menu" id="unhide">
+                <div class="title_col">
+                    <span>პროდუქცია</span>
+                    <span class="arrow_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                        <g id="Group_461" data-name="Group 461" transform="translate(-320 -125)">
+                          <rect id="Rectangle_292" data-name="Rectangle 292" width="34" height="34" transform="translate(320 125)" fill="rgba(255,255,255,0)"/>
+                          <g id="Group_460" data-name="Group 460" transform="translate(689.603 66.097) rotate(135)">
+                            <rect id="Rectangle_282" data-name="Rectangle 282" width="8" height="2" transform="translate(299 197)" fill="#fff"/>
+                            <rect id="Rectangle_283" data-name="Rectangle 283" width="8" height="2" transform="translate(307 191) rotate(90)" fill="#fff"/>
+                          </g>
+                        </g>
+                      </svg>                              
+                </span>
+                </div>
+                <ul class="overlay_list">
+                    <li class="overlay_li" onclick="unhideSecondDropdown()">
+                        <span>პროფილები</span>
+                    </li>
+                    <li class="overlay_li" onclick="unhideThirdDropdown()">
+                        <span>აქსესუარები</span>
+                    </li>
+                    <li class="overlay_li" onclick="unhideFourthDropdown()">
+                        <span>კუთხოვანა</span>
+                    </li>
+                    <li class="overlay_li" onclick="unhideFifthDropdown()">
+                        <span>დუბელი</span>
+                    </li>
+                    <li class="overlay_li" onclick="unhideSixthDropdown()">
+                        <span>სჭვალი</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="overlay_second_dropdown" id="unhide_second">
+                <span class="overlay_title">პროფილები</span>
+                <ul class="dropdown_menu">
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">ჭერის პროფილი</a></li>
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">ტიხრის პროფილი</a></li>
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კარის პროფილი</a></li>
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">ყველას ნახვა</a></li>
+                </ul>
+            </div>
+            <div class="overlay_third_dropdown" id="unhide_third">
+                <span class="overlay_title">აქსესუარები</span>
+                <ul class="dropdown_menu">
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 1</a></li>
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 2</a></li>
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 3</a></li>
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 4</a></li>
+                </ul>
+            </div>
+            <div class="overlay_fourth_dropdown" id="unhide_fourth">
+                <span class="overlay_title">კუთხოვანი</span>
+                <ul class="dropdown_menu">
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 1</a></li>
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 2</a></li>
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 3</a></li>
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 4</a></li>
+                </ul>
+            </div>
+            <div class="overlay_fifth_dropdown" id="unhide_fifth">
+                <span class="overlay_title">დუბელი</span>
+                <ul class="dropdown_menu">
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 1</a></li>
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 2</a></li>
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 3</a></li>
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 4</a></li>
+                </ul>
+            </div>
+            <div class="overlay_sixth_dropdown" id="unhide_sixth">
+                <span class="overlay_title">სჭვალი</span>
+                <ul class="dropdown_menu">
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 1</a></li>
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 2</a></li>
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 3</a></li>
+                    <li class="dropdown_item"><a class="dropdown_link" href="#">კატეგორია 4</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="overlay_header_back">
+            <span class="burger_menu" onclick="openNav()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                    <g id="Group_65" data-name="Group 65" transform="translate(-37 -50)">
+                    <rect id="Rectangle_204" data-name="Rectangle 204" width="26" height="26" transform="translate(37 50)" fill="rgba(255,255,255,0)"/>
+                    <path id="line-spacing" d="M11.833,9.666h18.33a1.833,1.833,0,0,0,0-3.666H11.833a1.833,1.833,0,0,0,0,3.666Zm18.33,5.5H11.833a1.833,1.833,0,0,0,0,3.666h18.33a1.833,1.833,0,0,0,0-3.666Zm0,9.165H11.833a1.833,1.833,0,0,0,0,3.666h18.33a1.833,1.833,0,0,0,0-3.666Z" transform="translate(29.004 46)" fill="#171717"/>
+                    </g>
+                </svg>
+            </span>
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="97" height="66.919" viewBox="0 0 97 66.919">
+                <g id="Group_1" data-name="Group 1" transform="translate(-528.985 -412.758)">
+                  <path id="PS" d="M716.557,425.8l18.188-6.063-18.187-6.062-18.188,6.063v12.125l18.188,6.063v6.063l-18.188-6.062v18.188l18.188,6.063V450.052l18.188-6.063V425.8l-18.187,6.063Z" transform="translate(-161.009 38.102) rotate(-3)" fill="#e4190b"/>
+                  <g id="Bungee-Regular" transform="translate(528.985 467.552)">
+                    <path id="M" d="M1016.818,731.567h-2.129a.492.492,0,0,1-.394-.139.65.65,0,0,1-.123-.442V720.509a.664.664,0,0,1,.123-.445.5.5,0,0,1,.394-.136h2.3a.638.638,0,0,1,.38.11,1.065,1.065,0,0,1,.277.373l1.288,2.637a1.237,1.237,0,0,0,.123.208.16.16,0,0,0,.134.066h.129a.161.161,0,0,0,.137-.066,1.245,1.245,0,0,0,.123-.208l1.271-2.637a1.066,1.066,0,0,1,.28-.373.632.632,0,0,1,.38-.11h2.316a.5.5,0,0,1,.394.136.663.663,0,0,1,.123.445v10.477a.649.649,0,0,1-.123.442.491.491,0,0,1-.394.139h-2.2a.491.491,0,0,1-.394-.139.648.648,0,0,1-.123-.442v-5.693l-.844,1.765a.93.93,0,0,1-.307.395.768.768,0,0,1-.45.12h-.573a.774.774,0,0,1-.45-.12.952.952,0,0,1-.307-.395l-.844-1.765v5.693a.649.649,0,0,1-.123.442A.491.491,0,0,1,1016.818,731.567Z" transform="translate(-927.344 -719.685)" fill="#e4190b"/>
+                    <path id="E" d="M969.056,731.567h-6.635a.492.492,0,0,1-.394-.139.65.65,0,0,1-.123-.442V720.509a.664.664,0,0,1,.123-.445.5.5,0,0,1,.394-.136h6.635a.5.5,0,0,1,.394.136.663.663,0,0,1,.123.445V722.4a.664.664,0,0,1-.123.445.5.5,0,0,1-.394.136h-3.948v1.247H967.9a.5.5,0,0,1,.391.136.664.664,0,0,1,.123.445v1.73a.649.649,0,0,1-.123.442.488.488,0,0,1-.391.139h-2.791v1.389h3.948a.5.5,0,0,1,.394.139.664.664,0,0,1,.123.445v1.891a.649.649,0,0,1-.123.442A.491.491,0,0,1,969.056,731.567Z" transform="translate(-884.43 -719.685)" fill="#e4190b"/>
+                    <path id="T" d="M911.636,731.567H909.32a.491.491,0,0,1-.394-.139.649.649,0,0,1-.123-.442v-7.938h-2.1a.5.5,0,0,1-.394-.139.664.664,0,0,1-.123-.445v-1.955a.663.663,0,0,1,.123-.445.5.5,0,0,1,.394-.136h7.552a.5.5,0,0,1,.394.136.664.664,0,0,1,.12.445v1.955a.665.665,0,0,1-.12.445.5.5,0,0,1-.394.139h-2.1v7.938a.65.65,0,0,1-.12.442A.492.492,0,0,1,911.636,731.567Z" transform="translate(-838.682 -719.685)" fill="#e4190b"/>
+                    <path id="S" d="M861.9,731.567h-4.52a.489.489,0,0,1-.391-.139.649.649,0,0,1-.123-.442v-1.891a.665.665,0,0,1,.123-.445.5.5,0,0,1,.391-.139h3.85a.318.318,0,0,0,.28-.136.582.582,0,0,0,.092-.331.7.7,0,0,0-.092-.4.369.369,0,0,0-.28-.145l-2.146-.341a2.927,2.927,0,0,1-1.609-.742,2.606,2.606,0,0,1-.609-1.942v-1.7a2.743,2.743,0,0,1,.788-2.109,3.044,3.044,0,0,1,2.174-.736h4.006a.5.5,0,0,1,.391.136.663.663,0,0,1,.123.445v1.923a.664.664,0,0,1-.123.445.5.5,0,0,1-.391.139H860.5a.333.333,0,0,0-.288.136.573.573,0,0,0-.1.347.611.611,0,0,0,.1.357.37.37,0,0,0,.288.161l2.129.322a3,3,0,0,1,1.618.745,2.58,2.58,0,0,1,.615,1.939v1.7a2.736,2.736,0,0,1-.793,2.109A3.067,3.067,0,0,1,861.9,731.567Z" transform="translate(-798.19 -719.685)" fill="#e4190b"/>
+                    <path id="Y" d="M805.6,731.567h-2.316a.492.492,0,0,1-.394-.139.649.649,0,0,1-.123-.442v-2.071l-2.188-3.312a3.263,3.263,0,0,1-.436-.875,4.235,4.235,0,0,1-.109-1.115v-3.1a.663.663,0,0,1,.123-.445.5.5,0,0,1,.394-.136h2.2a.5.5,0,0,1,.394.136.664.664,0,0,1,.123.445v2.652c0,.107,0,.221.014.338a.734.734,0,0,0,.115.341l.657,1.162a.626.626,0,0,0,.151.211.288.288,0,0,0,.193.063h.142a.284.284,0,0,0,.193-.063.626.626,0,0,0,.151-.211l.659-1.162a.805.805,0,0,0,.115-.341c.008-.117.014-.231.014-.338v-2.652a.664.664,0,0,1,.12-.445.5.5,0,0,1,.394-.136h2.132a.5.5,0,0,1,.394.136.665.665,0,0,1,.12.445v3.1a3.967,3.967,0,0,1-.115,1.115,3.781,3.781,0,0,1-.428.875l-2.176,3.328v2.055a.649.649,0,0,1-.12.442A.491.491,0,0,1,805.6,731.567Z" transform="translate(-751.532 -719.685)" fill="#e4190b"/>
+                    <path id="S-2" data-name="S" d="M754.4,731.567h-4.52a.488.488,0,0,1-.391-.139.649.649,0,0,1-.123-.442v-1.891a.664.664,0,0,1,.123-.445.5.5,0,0,1,.391-.139h3.85a.318.318,0,0,0,.279-.136.582.582,0,0,0,.092-.331.7.7,0,0,0-.092-.4.368.368,0,0,0-.279-.145l-2.146-.341a2.927,2.927,0,0,1-1.609-.742,2.606,2.606,0,0,1-.609-1.942v-1.7a2.743,2.743,0,0,1,.788-2.109,3.044,3.044,0,0,1,2.174-.736h4.006a.5.5,0,0,1,.391.136.664.664,0,0,1,.123.445v1.923a.665.665,0,0,1-.123.445.5.5,0,0,1-.391.139H753a.333.333,0,0,0-.288.136.574.574,0,0,0-.1.347.611.611,0,0,0,.1.357.37.37,0,0,0,.288.161l2.129.322a3,3,0,0,1,1.618.745,2.58,2.58,0,0,1,.615,1.939v1.7a2.736,2.736,0,0,1-.794,2.109A3.067,3.067,0,0,1,754.4,731.567Z" transform="translate(-709.925 -719.685)" fill="#e4190b"/>
+                    <path id="F" d="M704.135,731.567H701.92a.491.491,0,0,1-.394-.139.649.649,0,0,1-.123-.442V720.509a.663.663,0,0,1,.123-.445.5.5,0,0,1,.394-.136H708.3a.5.5,0,0,1,.394.136.664.664,0,0,1,.12.445v1.923a.665.665,0,0,1-.12.445.5.5,0,0,1-.394.139h-3.646v1.68h2.486a.5.5,0,0,1,.394.139.66.66,0,0,1,.123.442v1.942a.664.664,0,0,1-.123.445.5.5,0,0,1-.394.136h-2.486v3.186a.65.65,0,0,1-.123.442A.492.492,0,0,1,704.135,731.567Z" transform="translate(-670.548 -719.685)" fill="#e4190b"/>
+                    <path id="O" d="M650.491,727.394a4.451,4.451,0,0,1-.193,1.352,2.277,2.277,0,0,1-.685,1.036,3.493,3.493,0,0,1-1.361.669,8.315,8.315,0,0,1-2.2.243,8.4,8.4,0,0,1-2.2-.243,3.5,3.5,0,0,1-1.366-.669,2.263,2.263,0,0,1-.687-1.036,4.453,4.453,0,0,1-.193-1.352v-5.513a4.431,4.431,0,0,1,.193-1.348,2.3,2.3,0,0,1,.687-1.042,3.385,3.385,0,0,1,1.366-.679,8.274,8.274,0,0,1,2.2-.243,8.186,8.186,0,0,1,2.2.243,3.377,3.377,0,0,1,1.361.679,2.312,2.312,0,0,1,.685,1.042,4.429,4.429,0,0,1,.193,1.348Zm-5.635-.581a.754.754,0,0,0,.215.543,2.347,2.347,0,0,0,1.975,0,.752.752,0,0,0,.212-.543v-4.348a.725.725,0,0,0-.212-.527,2.346,2.346,0,0,0-1.975,0,.728.728,0,0,0-.215.527Z" transform="translate(-621.454 -718.569)" fill="#e4190b"/>
+                    <path id="R" d="M586.22,731.567h-2.2a.492.492,0,0,1-.394-.139.65.65,0,0,1-.123-.442V720.509a.664.664,0,0,1,.123-.445.5.5,0,0,1,.394-.136h4.763a2.718,2.718,0,0,1,2.21.751,3,3,0,0,1,.606,1.948v.742a3.267,3.267,0,0,1-.179,1.156,1.191,1.191,0,0,1-.623.688,1.8,1.8,0,0,1,1.252.711,2.572,2.572,0,0,1,.481,1.632v3.429a.649.649,0,0,1-.123.442.489.489,0,0,1-.391.139H589.8a.491.491,0,0,1-.394-.139.649.649,0,0,1-.12-.442V728.51a.907.907,0,0,0-.123-.524.482.482,0,0,0-.422-.171h-2v3.17a.649.649,0,0,1-.12.442A.491.491,0,0,1,586.22,731.567Zm.514-8.731v2.071h1.073a.532.532,0,0,0,.5-.221,1.067,1.067,0,0,0,.128-.54v-.55a1.078,1.078,0,0,0-.128-.543.537.537,0,0,0-.5-.218Z" transform="translate(-573.745 -719.685)" fill="#e4190b"/>
+                    <path id="P" d="M531.717,731.567H529.5a.491.491,0,0,1-.394-.139.649.649,0,0,1-.123-.442V720.509a.663.663,0,0,1,.123-.445.5.5,0,0,1,.394-.136h4.375a3.318,3.318,0,0,1,2.663.872,3.491,3.491,0,0,1,.715,2.28v2.068a3.491,3.491,0,0,1-.715,2.28,3.308,3.308,0,0,1-2.663.875h-1.643v2.684a.649.649,0,0,1-.123.442A.491.491,0,0,1,531.717,731.567Zm.486-8.617v2.441h1.288a.557.557,0,0,0,.545-.243,1.174,1.174,0,0,0,.128-.549v-.856a1.174,1.174,0,0,0-.128-.549.562.562,0,0,0-.545-.243Z" transform="translate(-528.985 -719.685)" fill="#e4190b"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="search_btn" id="search_btn_mobile" onclick="searchButtonAppearMobile()">
+                <svg class="search_btn_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path  />
+                    <path id="Path_4" data-name="Path 4" d="M11,2a9,9,0,1,1-9,9A9,9,0,0,1,11,2Zm0,16a7,7,0,1,0-7-7A7,7,0,0,0,11,18Zm8.485.071L22.314,20.9,20.9,22.314l-2.828-2.829,1.414-1.414Z" fill="#777"/>
+                </svg>
+            </div>
+            <div class="search_close_btn" id="search_close_icon" onclick="searchButtonAppearMobile()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                    <g id="Group_65" data-name="Group 65" transform="translate(-37 -50)">
+                    <rect id="Rectangle_204" data-name="Rectangle 204" width="26" height="26" transform="translate(37 50)" fill="rgba(255,255,255,0)"/>
+                    <rect id="Rectangle_289" data-name="Rectangle 289" width="3" height="4" rx="1.5" transform="translate(39 61)" fill="#fff" opacity="0"/>
+                    <rect id="Rectangle_290" data-name="Rectangle 290" width="22" height="4" rx="2" transform="translate(43.828 54) rotate(45)" fill="#000"/>
+                    <rect id="Rectangle_291" data-name="Rectangle 291" width="22" height="4" rx="2" transform="translate(41 69.556) rotate(-45)" fill="#000"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="search_group_mobile" id="search_group_mobile">
+            <input class="search_input_mobile" onfocus=this.value='' ype="text" placeholder="ძებნა..." name="search">
+            <button class="search_btn_mobile" type="submit" form="find">
+                <svg id="search-2-line" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path  />
+                    <path id="Path_4" data-name="Path 4" d="M11,2a9,9,0,1,1-9,9A9,9,0,0,1,11,2Zm0,16a7,7,0,1,0-7-7A7,7,0,0,0,11,18Zm8.485.071L22.314,20.9,20.9,22.314l-2.828-2.829,1.414-1.414Z" fill="#777"/>
+                </svg>   
+                </button>
+        </div>
+    </div>
+    <header class="header_wrapper" id="myHeader">
+        <div class="wrapper" id="wrapper">
+            <div class="container" id="container">
+                <div id="header_inner" class="header_inner">
+                    <div id="header_left" class="header_left">
+                        <img class="logo" id="logo" src="../images/main_icon.svg" alt="main_logo">
+                        <div class="search_group" id="search_group_first">
+                            <input class="search_input" onfocus=this.value='' ype="text" placeholder="ძებნა..." name="search">
+                            <button class="search_btn" type="submit" form="find">
+                            <svg id="search-2-line" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path  />
+                                <path id="Path_4" data-name="Path 4" d="M11,2a9,9,0,1,1-9,9A9,9,0,0,1,11,2Zm0,16a7,7,0,1,0-7-7A7,7,0,0,0,11,18Zm8.485.071L22.314,20.9,20.9,22.314l-2.828-2.829,1.414-1.414Z" fill="#777"/>
+                            </svg>   
+                            </button>
+                        </div>
+                    </div>
+                    <div id="header_right" class="header_right">
+                        <ul class="contact_list">
+                            <li class="contact_li">
+                                <a href="#" class="contact_link">
+                                    <div class="contact">
+                                        <div class="contact_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                                            <g id="Group_18" data-name="Group 18" transform="translate(-1264 -38)">
+                                              <rect id="Rectangle_154" data-name="Rectangle 154" width="26" height="26" transform="translate(1264 38)" fill="rgba(228,25,11,0)"/>
+                                              <path id="envelope-upload" d="M21.4,14.6a1.049,1.049,0,0,0-1.047,1.05v4.2A1.049,1.049,0,0,1,19.3,20.9H4.642a1.049,1.049,0,0,1-1.047-1.05V9.782l6.158,6.186a3.136,3.136,0,0,0,4.441,0l1.718-1.722a1.053,1.053,0,0,0-1.487-1.491l-1.718,1.722a1.045,1.045,0,0,1-1.466,0L5.071,8.3h6.9a1.05,1.05,0,0,0,0-2.1H4.642A3.146,3.146,0,0,0,1.5,9.352v10.5A3.146,3.146,0,0,0,4.642,23H19.3a3.146,3.146,0,0,0,3.142-3.151v-4.2A1.049,1.049,0,0,0,21.4,14.6ZM23.19,5.455,20.048,2.3a1.081,1.081,0,0,0-1.487,0L15.419,5.455a1.053,1.053,0,1,0,1.487,1.491l1.351-1.365v5.871a1.047,1.047,0,1,0,2.095,0V5.581L21.7,6.946A1.053,1.053,0,1,0,23.19,5.455Z" transform="translate(1264.5 38.495)" fill="#e4190b"/>
+                                            </g>
+                                          </svg>
+                                        </div>
+                                        <span class="contact_text">example@gmail.com</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="contact_li">
+                                <a href="#" class="contact_link">
+                                    <div class="contact">
+                                        <div class="contact_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                                                <g id="Group_20" data-name="Group 20" transform="translate(-1465 -34)">
+                                                  <rect id="Rectangle_155" data-name="Rectangle 155" width="26" height="26" transform="translate(1465 34)" fill="rgba(228,25,11,0)"/>
+                                                  <path id="mobile-vibrate" d="M11.048,15.972l-.174-.139-.209-.116-.209-.058a1.158,1.158,0,0,0-1.043.313.963.963,0,0,0-.255.383,1.091,1.091,0,0,0,0,.881,1.24,1.24,0,0,0,.626.626,1.158,1.158,0,0,0,.44.093,1.262,1.262,0,0,0,.452-.093,1.008,1.008,0,0,0,.371-.255,1.078,1.078,0,0,0,.336-.812.975.975,0,0,0-.093-.441,1.079,1.079,0,0,0-.243-.383ZM3.667,9.757a1.158,1.158,0,0,0,.823-.348L9.4,4.492A1.156,1.156,0,0,0,7.769,2.856L2.856,7.773a1.166,1.166,0,0,0,.811,1.983Zm20.485,7.863a1.158,1.158,0,0,0-1.634,0l-4.913,4.917a1.156,1.156,0,1,0,1.634,1.635l4.913-4.859a1.16,1.16,0,0,0,0-1.693Zm.2-6.564A3.481,3.481,0,0,0,23.341,8.6L18.417,3.668a3.566,3.566,0,0,0-4.913,0L3.667,13.514a3.481,3.481,0,0,0,0,4.917L8.592,23.36h0a3.474,3.474,0,0,0,4.913,0l9.837-9.846a3.481,3.481,0,0,0,1.008-2.459Zm-2.653.823-9.825,9.834a1.158,1.158,0,0,1-1.645,0h0L5.313,16.8a1.16,1.16,0,0,1,0-1.647l9.825-9.834a1.158,1.158,0,0,1,1.645,0L21.7,10.232a1.16,1.16,0,0,1,0,1.647Z" transform="translate(1464.481 33.481)" fill="#e4190b"/>
+                                                </g>
+                                              </svg>
+                                        </div>
+                                        <span class="contact_text">+995 555 544 311</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="language">
+                            <ul class="language_list">
+                                <li class="language_li"><a class="language_link" href="#"><span>GEO</span></a></li>
+                                <li class="language_li"><a class="language_link" href="#"><span>ENG</span></a></li>
+                                <li class="language_li"><a class="language_link" href="#"><span>RUS</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav_wrapper" id="nav_wrapper">
+            <div class="container">
+                <div class="navigation_container" id="navigation_container">
+                    <div id="header_left_nav" class="header_left_nav">
+                        <img class="logo" id="logo" src="../images/main_icon.svg" alt="main_logo">
+                        <div class="search_group_hide">
+                            <input class="search_input_hide" id="search_input_hide" onfocus=this.value='' ype="text" placeholder="ძებნა..." name="search">
+                            <button class="search_btn_hide" id="search_btn_hide" type="submit" form="find" onclick="searchButtonAppear()">
+                            <svg id="search-2-line" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path  />
+                                <path id="Path_4" data-name="Path 4" d="M11,2a9,9,0,1,1-9,9A9,9,0,0,1,11,2Zm0,16a7,7,0,1,0-7-7A7,7,0,0,0,11,18Zm8.485.071L22.314,20.9,20.9,22.314l-2.828-2.829,1.414-1.414Z" fill="#777"/>
+                            </svg>   
+                            </button>
+                        </div>
+                    </div>
+                    <nav class="navigation">
+                        <ul class="navigation_list" id="navigation_list">
+                            <li class="nav_li"><a href="index.html" target="_blank" class="nav_link">მთავარი</a></li>
+                            <li class="nav_li"><a href="aboutUs.html" target="_blank" class="nav_link">ჩვენს შესახებ</a></li>
+                            <li class="nav_li">
+                                <a href="categories.html" target="_blank" class="nav_link">პროდუქცია</a>
+                                <ul class="menu_dropdown">
+                                    <li class="dropdown_li">
+                                        <a href="#" class="dropdown_link">პროფილები
+                                        </a>
+                                        <ul class="menu_second_dropdown">
+                                            <li class="second_dropdown_li">
+                                                <a href="#" class="second_dropdown_link">აქსესუარები</a>
+                                            </li>
+                                            <li class="second_dropdown_li">
+                                                <a href="#" class="second_dropdown_link">კუთხოვანი</a>
+                                            </li>
+                                            <li class="second_dropdown_li">
+                                                <a href="#" class="second_dropdown_link">დუბელი</a>
+                                            </li>
+                                            <li class="second_dropdown_li">
+                                                <a href="#" class="second_dropdown_link">სჭვალი</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav_li"><a href="photoGallery.html" target="_blank" class="nav_link">ფოტოგალერეა</a></li>
+                            <li class="nav_li"><a href="videoGallery.html" target="_blank" class="nav_link">ვიდეოგალერეა</a></li>
+                            <li class="nav_li"><a href="partners.html" target="_blank" class="nav_link">პარტნიორები</a></li>
+                            <li class="nav_li"><a href="branches.html" target="_blank" class="nav_link">ფილიალები</a></li>
+                            <li class="nav_li"><a href="contact.html" target="_blank" class="nav_link">კონტაქტი</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="validation">
+        <div class="container">
+            <span class="branches">ფილიალები</span>
+            <form class="validation_form">
+                <label class="validation_text" for="text">ფილიალების სანახავად შეიყვანეთ ადმინისტრაციის მიერ დაგენირირებული პაროლი</label>
+                <input id="password" class="text" onfocus=this.value='' ype="text" placeholder="პაროლი" name="search">
+                <button class="validation_button" type="submit" form="find" onclick="validate()"><span class="validation_title">ჩვენება</span></button>
+                <label class="validation_info" id="validation_info" for="text">პაროლი არასწორია</label>
+            </form>
+        </div>
+    </section>
+    <footer class="footer_wrapper">
+        <div class="container">
+            <div class="footer_up">
+                <h4 class="category">კატეგორიები</h4>
+                <ul class="footer_cols">
+                    <li class="footer_col">
+                        <div class="footer_title hasFooterMenu">
+                            <div class="title_col">
+                                <span>პროფილი</span>
+                                <span class="plus_circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path id="plus-circle" d="M10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2Zm0,14.4A6.4,6.4,0,1,1,16.4,10,6.4,6.4,0,0,1,10,16.4Zm3.2-7.2H10.8V6.8a.8.8,0,1,0-1.6,0V9.2H6.8a.8.8,0,0,0,0,1.6H9.2v2.4a.8.8,0,1,0,1.6,0V10.8h2.4a.8.8,0,0,0,0-1.6Z" transform="translate(-2 -2)" fill="#fff"/>
+                                  </svg>
+                                </span>
+                                <span class="minus_circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path id="plus-circle" d="M10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2Zm0,14.4A6.4,6.4,0,1,1,16.4,10,6.4,6.4,0,0,1,10,16.4Zm3.2-7.2H6.8a.8.8,0,0,0,0,1.6h6.4a.8.8,0,0,0,0-1.6Z" transform="translate(-2 -2)" fill="#fff"/>
+                                  </svg>
+                            </span>
+                            </div>
+                            <ul class="footer_list">
+                                <li class="footer_li"><a class="footer_link " href="#">ჭერის პროფილი</a></li>
+                                <li class="footer_li"><a class="footer_link active" href="#">ტიხრის პროფილი</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">კარის პროფილი</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">ყველას ნახვა</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer_col">
+                        <div class="footer_title hasFooterMenu">
+                            <div class="title_col">
+                                <span>აქსესუარი</span>
+                                <span class="plus_circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path id="plus-circle" d="M10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2Zm0,14.4A6.4,6.4,0,1,1,16.4,10,6.4,6.4,0,0,1,10,16.4Zm3.2-7.2H10.8V6.8a.8.8,0,1,0-1.6,0V9.2H6.8a.8.8,0,0,0,0,1.6H9.2v2.4a.8.8,0,1,0,1.6,0V10.8h2.4a.8.8,0,0,0,0-1.6Z" transform="translate(-2 -2)" fill="#fff"/>
+                                  </svg>
+                                </span>
+                                <span class="minus_circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path id="plus-circle" d="M10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2Zm0,14.4A6.4,6.4,0,1,1,16.4,10,6.4,6.4,0,0,1,10,16.4Zm3.2-7.2H6.8a.8.8,0,0,0,0,1.6h6.4a.8.8,0,0,0,0-1.6Z" transform="translate(-2 -2)" fill="#fff"/>
+                                  </svg>
+                            </span>
+                            </div>
+                            <ul class="footer_list">
+                                <li class="footer_li"><a class="footer_link" href="#">საკიდი</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">მავთული</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">სხვა</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">ყველას ნახვა</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer_col">
+                        <div class="footer_title hasFooterMenu">
+                            <div class="title_col">
+                                <span>კუთხოვანა</span>
+                                <span class="plus_circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path id="plus-circle" d="M10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2Zm0,14.4A6.4,6.4,0,1,1,16.4,10,6.4,6.4,0,0,1,10,16.4Zm3.2-7.2H10.8V6.8a.8.8,0,1,0-1.6,0V9.2H6.8a.8.8,0,0,0,0,1.6H9.2v2.4a.8.8,0,1,0,1.6,0V10.8h2.4a.8.8,0,0,0,0-1.6Z" transform="translate(-2 -2)" fill="#fff"/>
+                                  </svg>
+                                </span>
+                                <span class="minus_circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path id="plus-circle" d="M10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2Zm0,14.4A6.4,6.4,0,1,1,16.4,10,6.4,6.4,0,0,1,10,16.4Zm3.2-7.2H6.8a.8.8,0,0,0,0,1.6h6.4a.8.8,0,0,0,0-1.6Z" transform="translate(-2 -2)" fill="#fff"/>
+                                  </svg>
+                            </span>
+                            </div>
+                            <ul class="footer_list">
+                                <li class="footer_li"><a class="footer_link" href="#">ჭერის პროფილი</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">ტიხრის პროფილი</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">კარის პროფილი</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">ყველას ნახვა</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer_col">
+                        <div class="footer_title hasFooterMenu">
+                            <div class="title_col">
+                                <span>კუთხოვანა</span>
+                                <span class="plus_circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path id="plus-circle" d="M10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2Zm0,14.4A6.4,6.4,0,1,1,16.4,10,6.4,6.4,0,0,1,10,16.4Zm3.2-7.2H10.8V6.8a.8.8,0,1,0-1.6,0V9.2H6.8a.8.8,0,0,0,0,1.6H9.2v2.4a.8.8,0,1,0,1.6,0V10.8h2.4a.8.8,0,0,0,0-1.6Z" transform="translate(-2 -2)" fill="#fff"/>
+                                  </svg>
+                                </span>
+                                <span class="minus_circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path id="plus-circle" d="M10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2Zm0,14.4A6.4,6.4,0,1,1,16.4,10,6.4,6.4,0,0,1,10,16.4Zm3.2-7.2H6.8a.8.8,0,0,0,0,1.6h6.4a.8.8,0,0,0,0-1.6Z" transform="translate(-2 -2)" fill="#fff"/>
+                                  </svg>
+                            </span>
+                            </div>
+                            <ul class="footer_list">
+                                <li class="footer_li"><a class="footer_link" href="#">საკიდი</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">მავთული</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">სხვა</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">ყველას ნახვა</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer_col">
+                        <div class="footer_title hasFooterMenu">
+                            <div class="title_col">
+                                <span>დუბელი</span>
+                                <span class="plus_circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path id="plus-circle" d="M10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2Zm0,14.4A6.4,6.4,0,1,1,16.4,10,6.4,6.4,0,0,1,10,16.4Zm3.2-7.2H10.8V6.8a.8.8,0,1,0-1.6,0V9.2H6.8a.8.8,0,0,0,0,1.6H9.2v2.4a.8.8,0,1,0,1.6,0V10.8h2.4a.8.8,0,0,0,0-1.6Z" transform="translate(-2 -2)" fill="#fff"/>
+                                  </svg>
+                                </span>
+                                <span class="minus_circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path id="plus-circle" d="M10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2Zm0,14.4A6.4,6.4,0,1,1,16.4,10,6.4,6.4,0,0,1,10,16.4Zm3.2-7.2H6.8a.8.8,0,0,0,0,1.6h6.4a.8.8,0,0,0,0-1.6Z" transform="translate(-2 -2)" fill="#fff"/>
+                                  </svg>
+                            </span>
+                            </div>
+                            <ul class="footer_list">
+                                <li class="footer_li"><a class="footer_link" href="#">ჭერის პროფილი</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">ტიხრის პროფილი</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">კარის პროფილი</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">ყველას ნახვა</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer_col">
+                        <div class="footer_title hasFooterMenu">
+                            <div class="title_col">
+                                <span>სჭვალი</span>
+                                <span class="plus_circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path id="plus-circle" d="M10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2Zm0,14.4A6.4,6.4,0,1,1,16.4,10,6.4,6.4,0,0,1,10,16.4Zm3.2-7.2H10.8V6.8a.8.8,0,1,0-1.6,0V9.2H6.8a.8.8,0,0,0,0,1.6H9.2v2.4a.8.8,0,1,0,1.6,0V10.8h2.4a.8.8,0,0,0,0-1.6Z" transform="translate(-2 -2)" fill="#fff"/>
+                                  </svg>
+                                </span>
+                                <span class="minus_circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path id="plus-circle" d="M10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2Zm0,14.4A6.4,6.4,0,1,1,16.4,10,6.4,6.4,0,0,1,10,16.4Zm3.2-7.2H6.8a.8.8,0,0,0,0,1.6h6.4a.8.8,0,0,0,0-1.6Z" transform="translate(-2 -2)" fill="#fff"/>
+                                  </svg>
+                            </span>
+                            </div>
+                            <ul class="footer_list">
+                                <li class="footer_li"><a class="footer_link" href="#">საკიდი</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">მავთული</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">სხვა</a></li>
+                                <li class="footer_li"><a class="footer_link" href="#">ყველას ნახვა</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer_bottom">
+                <div class="footer_bottom_left">
+                    <span>ყველა უფლება დაცულია</span>
+                    <button class="scrollToTopBtn" id="scrollToTopBtn" onclick="scrollToTop()">
+                    <span class="scroll_icon">
+                        <svg id="arrow-drop-up-line" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                           
+                            <path id="Path_21" data-name="Path 21" d="M12,11.828,9.172,14.657,7.757,13.243,12,9l4.243,4.243-1.415,1.414Z" fill="#fff"/>
+                          </svg>
+                    </span>
+                მაღლა
+            </button>
+                </div>
+                <div class="footer_bottom_right">
+                    <div class="copyright">დამზადებულია <a href="https://smartacademy.ge/"><span>SmartWeb</span></a>-ის მიერ</div>
+                </div>
+            </div>
+        </div>
+        <div class="contact_items">
+            <div class="container">
+                <ul class="contact_list">
+                    <li class="contact_li">
+                        <a href="#" class="contact_link">
+                            <div class="contact">
+                                <div class="contact_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                                <g id="Group_18" data-name="Group 18" transform="translate(-1264 -38)">
+                                  <rect id="Rectangle_154" data-name="Rectangle 154" width="26" height="26" transform="translate(1264 38)" fill="rgba(228,25,11,0)"/>
+                                  <path id="envelope-upload" d="M21.4,14.6a1.049,1.049,0,0,0-1.047,1.05v4.2A1.049,1.049,0,0,1,19.3,20.9H4.642a1.049,1.049,0,0,1-1.047-1.05V9.782l6.158,6.186a3.136,3.136,0,0,0,4.441,0l1.718-1.722a1.053,1.053,0,0,0-1.487-1.491l-1.718,1.722a1.045,1.045,0,0,1-1.466,0L5.071,8.3h6.9a1.05,1.05,0,0,0,0-2.1H4.642A3.146,3.146,0,0,0,1.5,9.352v10.5A3.146,3.146,0,0,0,4.642,23H19.3a3.146,3.146,0,0,0,3.142-3.151v-4.2A1.049,1.049,0,0,0,21.4,14.6ZM23.19,5.455,20.048,2.3a1.081,1.081,0,0,0-1.487,0L15.419,5.455a1.053,1.053,0,1,0,1.487,1.491l1.351-1.365v5.871a1.047,1.047,0,1,0,2.095,0V5.581L21.7,6.946A1.053,1.053,0,1,0,23.19,5.455Z" transform="translate(1264.5 38.495)" fill="#e4190b"/>
+                                </g>
+                              </svg>
+                                </div>
+                                <span class="contact_text">example@gmail.com</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="contact_li">
+                        <a href="#" class="contact_link">
+                            <div class="contact">
+                                <div class="contact_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                                    <g id="Group_20" data-name="Group 20" transform="translate(-1465 -34)">
+                                      <rect id="Rectangle_155" data-name="Rectangle 155" width="26" height="26" transform="translate(1465 34)" fill="rgba(228,25,11,0)"/>
+                                      <path id="mobile-vibrate" d="M11.048,15.972l-.174-.139-.209-.116-.209-.058a1.158,1.158,0,0,0-1.043.313.963.963,0,0,0-.255.383,1.091,1.091,0,0,0,0,.881,1.24,1.24,0,0,0,.626.626,1.158,1.158,0,0,0,.44.093,1.262,1.262,0,0,0,.452-.093,1.008,1.008,0,0,0,.371-.255,1.078,1.078,0,0,0,.336-.812.975.975,0,0,0-.093-.441,1.079,1.079,0,0,0-.243-.383ZM3.667,9.757a1.158,1.158,0,0,0,.823-.348L9.4,4.492A1.156,1.156,0,0,0,7.769,2.856L2.856,7.773a1.166,1.166,0,0,0,.811,1.983Zm20.485,7.863a1.158,1.158,0,0,0-1.634,0l-4.913,4.917a1.156,1.156,0,1,0,1.634,1.635l4.913-4.859a1.16,1.16,0,0,0,0-1.693Zm.2-6.564A3.481,3.481,0,0,0,23.341,8.6L18.417,3.668a3.566,3.566,0,0,0-4.913,0L3.667,13.514a3.481,3.481,0,0,0,0,4.917L8.592,23.36h0a3.474,3.474,0,0,0,4.913,0l9.837-9.846a3.481,3.481,0,0,0,1.008-2.459Zm-2.653.823-9.825,9.834a1.158,1.158,0,0,1-1.645,0h0L5.313,16.8a1.16,1.16,0,0,1,0-1.647l9.825-9.834a1.158,1.158,0,0,1,1.645,0L21.7,10.232a1.16,1.16,0,0,1,0,1.647Z" transform="translate(1464.481 33.481)" fill="#e4190b"/>
+                                    </g>
+                                  </svg>
+                                </div>
+                                <span class="contact_text">+995 555 544 311</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../js files/main.js"></script>
+    <script src="../js files/validation.js"></script>
+</body>
+
+</html>

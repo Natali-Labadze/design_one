@@ -1,0 +1,1666 @@
+@import './../modules/variable';
+@import './../modules/function';
+@import './../modules/mixins';
+@import './../modules/private';
+@import './../basic/font';
+@import './../basic/reset';
+.swiper-container {
+    width: 100%;
+    height: 837px;
+    margin-left: auto;
+    margin-right: auto;
+    .swiper-wrapper {
+        .swiper-slide {
+            text-align: center;
+            font-size: $size04;
+            background-color: #fff;
+            /* Center slide text vertically */
+            @include display(flex);
+            justify-content: center;
+            align-items: center;
+            .slide-img {
+                @include display(block);
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .swiper-button-next {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        border: none;
+        background-color: $color03;
+        @include positionValTopRight(absolute, 50%, 0);
+        transform: translateY(-50%);
+        z-index: 10;
+        cursor: pointer;
+        transition: 400ms;
+        .next_arrow {
+            @include positionValTopLeft(absolute, 50%, 50%);
+            transform: translate(-50%, -50%);
+        }
+        &:hover {
+            background-color: $color01;
+        }
+        &::after {
+            content: '';
+        }
+    }
+    .swiper-button-prev {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        border: none;
+        background-color: $color03;
+        @include positionValTopLeft(absolute, 50%, 0);
+        transform: translateY(-50%);
+        z-index: 10;
+        cursor: pointer;
+        transition: 400ms;
+        transition: 400ms;
+        .prev_arrow {
+            @include positionValTopLeft(absolute, 50%, 50%);
+            transform: translate(-50%, -50%);
+            color: $color08;
+        }
+        &:hover {
+            background-color: $color01;
+        }
+        &::after {
+            content: '';
+        }
+    }
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            margin-right: 30px;
+            background-color: $color06;
+            opacity: 1;
+            &:last-child {
+                margin-right: 0px;
+            }
+            &.swiper-pagination-bullet-active {
+                background-color: $color01;
+                transition: 0.2s linear;
+                &:hover {
+                    box-shadow: 0 0 10px rgba(228, 25, 11, 0.9);
+                }
+            }
+        }
+    }
+}
+
+.section_part {
+    background-color: $color10;
+    .up_position {
+        .contact_items {
+            @include display(none);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: $color06;
+            .contact_list {
+                @include display(flex);
+                @include flex(space-between, flex);
+                .contact_li {
+                    .contact_link {
+                        .contact {
+                            @include display(flex);
+                            align-items: center;
+                            .contact_icon {
+                                margin-right: 5px;
+                                position: relative;
+                                cursor: pointer;
+                                background-color: $color05;
+                                border-radius: 50%;
+                                border: 1px solid transparent;
+                                width: 44px;
+                                height: 44px;
+                                transition: 0.3s linear;
+                                svg {
+                                    border: none;
+                                    width: 22px;
+                                    @include positionValTopRight(absolute, 50%, 0%);
+                                    transform: translate(-50%, -50%);
+                                    path {
+                                        fill: $color08;
+                                    }
+                                }
+                                &:hover {
+                                    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+                                    background-color: $color07;
+                                }
+                            }
+                            .contact_text {
+                                color: $color08;
+                                font-family: 'MyriadGEOMtavruliMedium';
+                                font-size: $size01;
+                                line-height: 16px;
+                                font-weight: 500;
+                                font-style: normal;
+                            }
+                        }
+                    }
+                }
+            }
+            @include tablet {
+                @include display(block);
+            }
+        }
+        .cards_block {
+            padding-top: 124px;
+            padding-bottom: 130px;
+            @include tablet {
+                padding-bottom: 0px;
+                padding-top: 0px;
+            }
+            .cards_information {
+                margin-bottom: 40px;
+                @include display(flex);
+                @include flex(space-between, center);
+                .last_cards {
+                    max-width: 297px;
+                    .last_cards_info {
+                        font-family: 'MyriadGEOMtavruliMedium';
+                        font-weight: 500;
+                        font-style: normal;
+                        font-size: $size07;
+                        color: $color06;
+                        transition: 0.3s ease-out;
+                        &:hover {
+                            color: $color01;
+                        }
+                        @include tablet {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                .all_cards_info {
+                    font-family: 'MyriadGEOMtavruliMedium';
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: $size03;
+                    line-height: 25px;
+                    position: relative;
+                    .all_cards_link {
+                        color: $color01;
+                    }
+                    &::after {
+                        content: " ";
+                        width: 50px;
+                        height: 2px;
+                        background-color: $color01;
+                        bottom: 0;
+                        right: 0;
+                        @include display(inline-block);
+                        position: absolute;
+                    }
+                    @include tablet {
+                        @include display(none);
+                    }
+                }
+                @include tablet {
+                    margin-bottom: 30px;
+                }
+            }
+            .cards {
+                display: flex;
+                @include flex(space-between, center);
+                flex-wrap: wrap;
+                .card {
+                    width: calc(100% / 5 - 12px);
+                    margin-bottom: 24px;
+                    border-radius: 15px;
+                    background-color: $color08;
+                    box-shadow: 0 0 30px rgba(20, 29, 41, 0.12);
+                    transition: all 0.3s ease;
+                    .card_image {
+                        @include ParentOfPhoto;
+                        background-color: $color08;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-top: 10px;
+                        @include display(flex);
+                        @include flex(center, center);
+                        border-radius: 15px;
+                        @include tablet {
+                            margin: 0;
+                        }
+                        img {
+                            @include photo;
+                            transition: 0.2s all;
+                        }
+                        &:hover {
+                            position: relative;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                height: auto;
+                                &:hover {
+                                    transform: scale(1.2);
+                                }
+                            }
+                        }
+                    }
+                    .card_info {
+                        margin-left: 20px;
+                        @include tablet {
+                            margin-left: 10px;
+                        }
+                        .card_link {
+                            .card_title {
+                                @include textLine(1);
+                                margin-top: 16px;
+                                margin-bottom: 16px;
+                                font-family: 'FiraGO';
+                                font-weight: 500;
+                                font-size: $size04;
+                                line-height: 28px;
+                                color: $color06;
+                                transition: 0.3s ease-out;
+                                &:hover {
+                                    color: $color01;
+                                }
+                                @include tablet {
+                                    font-size: $size01;
+                                    margin-top: 8px;
+                                    margin-bottom: 8px;
+                                }
+                            }
+                        }
+                        .card_price {
+                            display: block;
+                            margin-bottom: 20px;
+                            font-family: 'FiraGO';
+                            font-weight: bold;
+                            font-size: $size06;
+                            line-height: 27px;
+                            color: $color06;
+                            @include tablet {
+                                font-size: $size03;
+                                margin-bottom: 10px;
+                            }
+                            &.disc {
+                                display: inline-block;
+                                margin-right: 10px;
+                                font-family: 'FiraGO';
+                                font-weight: bold;
+                                font-size: $size06;
+                                line-height: 27px;
+                                color: red;
+                                @include tablet {
+                                    color: $color06;
+                                    font-size: $size03;
+                                }
+                            }
+                        }
+                        .card_discount {
+                            font-family: 'FiraGO Book';
+                            font-weight: normal;
+                            font-style: normal;
+                            font-size: $size03;
+                            line-height: 19px;
+                            color: $color06;
+                            text-decoration: line-through;
+                            @include tablet {
+                                display: none;
+                            }
+                        }
+                    }
+                    @include tablet {
+                        width: calc(100% / 2 - 5px);
+                        margin-bottom: 12px;
+                    }
+                    &:hover {
+                        box-shadow: 0 0 10px rgba(23, 23, 23, 0.6);
+                    }
+                }
+            }
+            .cards_information_hide {
+                @include display(flex);
+                @include flex(flex-end, center);
+                .all_cards_info {
+                    margin-top: 27px;
+                    margin-bottom: 60px;
+                    @include display(none);
+                    font-family: 'MyriadGEOMtavruliMedium';
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: $size03;
+                    line-height: 25px;
+                    position: relative;
+                    @include tablet {
+                        @include display(block);
+                    }
+                    .all_cards_link {
+                        color: $color01;
+                    }
+                    &::after {
+                        content: " ";
+                        width: 50px;
+                        height: 2px;
+                        background-color: $color01;
+                        bottom: 0;
+                        right: 0;
+                        @include display(inline-block);
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+    .middle_position {
+        background-image: url("../images/cover_photo.jpg");
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 500px;
+        &:after {
+            content: " ";
+            width: 100%;
+            height: 100%;
+            background-color: rgba(228, 25, 11, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        @include mobile() {
+            background-color: $color10;
+            background-size: auto 300px;
+            background-position: center top;
+            &:after {
+                height: 300px;
+            }
+        }
+        .about_us_info {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            padding-top: 82px;
+            justify-content: center;
+            padding-bottom: 76px;
+            @include mobile() {
+                padding-top: 270px;
+                padding-bottom: 0px;
+            }
+            .text {
+                max-width: 460px;
+                text-align: center;
+                @include smallDesktop() {
+                    max-width: 360px;
+                }
+                @include mobile() {
+                    width: 100%;
+                    max-width: unset;
+                    background-color: $color10;
+                    padding: 34px 20px 50px 20px;
+                    border-radius: 12px;
+                }
+                .title {
+                    font-family: 'MyriadGEOMtavruliMedium';
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: $size06;
+                    line-height: 28px;
+                    color: $color08;
+                    text-align: center;
+                    @include mobile() {
+                        font-size: 18px;
+                        color: #171717;
+                    }
+                }
+                .text_info {
+                    margin-bottom: 40px;
+                    margin-top: 48px;
+                    font-family: 'FiraGO Book';
+                    font-weight: normal;
+                    font-style: normal;
+                    font-size: $size03;
+                    line-height: 25px;
+                    color: $color08;
+                    text-align: center;
+                    @include mobile() {
+                        font-size: 13px;
+                        color: #171717;
+                    }
+                }
+                .more {
+                    width: 169px;
+                    height: 56px;
+                    border-radius: 28px;
+                    margin: 0 auto;
+                    display: block;
+                    background-color: $color01;
+                    border: none;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                    .more_span {
+                        font-family: 'MyriadGEOMtavruliMedium';
+                        font-weight: 500;
+                        font-style: normal;
+                        font-size: $size03;
+                        line-height: 25px;
+                        color: $color08;
+                        margin: 18px auto 19px auto;
+                    }
+                }
+            }
+            .first_image {
+                position: absolute;
+                top: 60px;
+                left: 0;
+                @include desktop() {
+                    img {
+                        width: 150px;
+                        height: auto;
+                    }
+                }
+                @include mobile() {
+                    left: 20px;
+                    top: 205px;
+                    img {
+                        width: 76px;
+                        height: auto;
+                    }
+                }
+            }
+            .second_image {
+                position: absolute;
+                bottom: 60px;
+                right: 0;
+                @include desktop() {
+                    img {
+                        width: 240px;
+                        height: auto;
+                    }
+                }
+                @include mobile() {
+                    top: 25px;
+                    right: 21px;
+                    bottom: auto;
+                    img {
+                        width: 162px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    .down_position {
+        background-color: $color08;
+        padding-top: 124px;
+        padding-bottom: 146px;
+        width: 100%;
+        @include display(flex);
+        @include flex(space-between,
+        center);
+        .partners {
+            @include display(flex);
+            @include flex(space-between,
+            center);
+            @include tablet {
+                @include flex(center,
+                center);
+                flex-direction: column;
+            }
+            .text {
+                @include tablet {
+                    width: 100%;
+                    @include display(flex);
+                    flex-direction: column;
+                    @include flex(flex-start,
+                    center);
+                }
+                width: 35%;
+                .title {
+                    font-family: 'MyriadGEOMtavruliMedium';
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: $size07;
+                    line-height: 34px;
+                    color: $color06;
+                    @include tablet {
+                        width: 100%;
+                        font-size: $size04;
+                    }
+                }
+                .more_about {
+                    display: block;
+                    font-family: 'FiraGO';
+                    font-weight: 500;
+                    font-size: $size02;
+                    line-height: 17px;
+                    color: $color01;
+                    margin-top: 8px;
+                    margin-bottom: 40px;
+                    @include tablet {
+                        width: 100%;
+                        text-align: left;
+                        margin-bottom: 30px;
+                    }
+                }
+                .text_information {
+                    font-family: 'FiraGO Book';
+                    font-weight: normal;
+                    font-style: normal;
+                    font-size: $size03;
+                    line-height: 25px;
+                    color: $color06;
+                    @include tablet {
+                        display: none;
+                    }
+                }
+            }
+            .images {
+                width: 55%;
+                @include display(flex);
+                @include flex(center,
+                center);
+                flex-wrap: wrap;
+                .image {
+                    width: 219px;
+                    height: 80px;
+                    @include tablet {
+                        width: 162px;
+                        height: 60px;
+                        &:nth-child(5),
+                        &:nth-child(6) {
+                            display: none;
+                        }
+                    }
+                }
+                @include tablet {
+                    width: 100%;
+                }
+            }
+        }
+        @include mobile {
+            padding-top: 36px;
+            padding-bottom: 40px;
+        }
+    }
+}
+
+//partners page
+.cover {
+    .background-image {
+        width: 100%;
+    }
+}
+
+.down_position {
+    background-color: $color10;
+    .partners_page {
+        padding-top: 87px;
+        padding-bottom: 506px;
+        .title {
+            margin-bottom: 59px;
+            font-family: 'Helvetica Neue';
+            font-weight: bold;
+            font-size: $size07;
+            line-height: 28px;
+            color: $color06;
+            @include tablet {
+                margin-bottom: 40px;
+                font-size: $size04;
+            }
+        }
+        .images {
+            @include display(flex);
+            @include flex(space-between,
+            center);
+            flex-wrap: wrap;
+            width: 100%;
+            .image {
+                width: calc(100% / 6);
+                padding: 12px;
+                @include tablet {
+                    width: calc(100% / 2);
+                    padding: 10px;
+                    &:nth-child(7),
+                    &:nth-child(8),
+                    &:nth-child(9),
+                    &:nth-child(10),
+                    &:nth-child(11),
+                    &:nth-child(12) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        @include tablet {
+            padding-top: 36px;
+            padding-bottom: 118px;
+        }
+    }
+}
+
+.about_us {
+    background-color: $color10;
+    padding-top: 87px;
+    padding-bottom: 110px;
+    .title {
+        margin-bottom: 59px;
+        font-family: 'Helvetica Neue';
+        font-weight: bold;
+        font-style: normal;
+        font-size: $size07;
+        line-height: 28px;
+        color: $color06;
+        @include tablet {
+            font-size: $size04;
+            margin-bottom: 40px;
+            font-family: 'MyriadGEOMtavruliMedium';
+        }
+    }
+    .about {
+        @include display(flex);
+        @include flex(center,
+        center);
+        flex-direction: column;
+        .cover_img {
+            width: 100%;
+            .background_image {
+                width: 100%;
+                border-radius: 15px;
+            }
+        }
+        .information {
+            width: 70%;
+            margin-top: 62px;
+            .text {
+                margin-bottom: 35px;
+                font-family: 'FiraGO Book';
+                font-weight: normal;
+                font-style: normal;
+                font-size: $size03;
+                line-height: 25px;
+                color: $color06;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+            @include tablet {
+                width: 100%;
+                margin-top: 40px;
+            }
+        }
+        .first_image {
+            @include display(flex);
+            @include flex(space-between,
+            flex-start);
+        }
+        .second_image {
+            @include display(flex);
+            align-items: flex-end;
+        }
+    }
+    @include tablet {
+        padding-bottom: 40px;
+        padding-top: 36px;
+    }
+}
+
+//categories , search categories,  single product
+.base_categories {
+    background-color: $color10;
+    .category_section {
+        width: 100%;
+        @include display(flex);
+        justify-content: space-between;
+        .sidebar {
+            width: 340px;
+            @include display(flex);
+            flex-direction: column;
+            flex-shrink: 0;
+            margin-right: 25px;
+            background-color: $color08;
+            padding-top: 89px;
+            padding-left: 50px;
+            .sidebar_menu_box {
+                .saidbar_menu {
+                    .sidebar_list {
+                        .hassubmenu {
+                            // li , that has dropdown menu
+                            &.show .dropdown_menu {
+                                @include display(block);
+                            }
+                        }
+                        .sidebar_li {
+                            margin-bottom: 27px;
+                            .sidebar_span {
+                                font-family: 'Helvetica Neue';
+                                font-weight: bold;
+                                font-style: normal;
+                                font-size: $size03;
+                                line-height: 19px;
+                                color: $color06;
+                                transition: 0.3s linear;
+                                &:hover {
+                                    color: $color01;
+                                }
+                                &.change_font {
+                                    font-family: 'MyriadGEOMtavruliMedium';
+                                    font-weight: 500;
+                                    font-style: normal;
+                                }
+                            }
+                            .dropdown_menu {
+                                margin-top: 20px;
+                                margin-bottom: 27px;
+                                @include display(none);
+                                .dropdown_item {
+                                    padding-left: 20px;
+                                    margin-bottom: 16px;
+                                    &:last-child {
+                                        margin-bottom: 0px;
+                                    }
+                                    .dropdown_link {
+                                        font-family: 'FiraGO Book';
+                                        font-weight: normal;
+                                        font-style: normal;
+                                        font-size: $size03;
+                                        line-height: 19px;
+                                        color: $color06;
+                                        &.active {
+                                            color: $color01;
+                                        }
+                                        &:hover {
+                                            color: $color01;
+                                        }
+                                    }
+                                }
+                            }
+                            &:last-child {
+                                margin-bottom: 0px;
+                            }
+                        }
+                        @include tablet {
+                            margin-top: 17px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                    @include tablet {
+                        border-top: 2px solid $color11;
+                    }
+                }
+                @include tablet {
+                    @include display(none);
+                    &.unhide {
+                        @include display(block);
+                    }
+                }
+            }
+            @include tablet {
+                position: absolute;
+                z-index: 1;
+            }
+            .top_sidebar {
+                padding-top: 9px;
+                padding-bottom: 9px;
+                @include display(flex);
+                @include flex(space-between,
+                center);
+                @include display(none);
+                @include tablet {
+                    @include display(flex);
+                }
+                .clicks {
+                    .on_click_product {
+                        margin-bottom: 2px;
+                        font-family: 'Helvetica Neue';
+                        font-weight: bold;
+                        font-style: normal;
+                        font-size: $size03;
+                        line-height: 19px;
+                        color: $color06;
+                        &.change_font {
+                            font-family: 'Helvetica Neue';
+                            font-weight: bold;
+                            font-style: normal;
+                        }
+                    }
+                    .on_click {
+                        font-family: 'FiraGO Book';
+                        font-weight: normal;
+                        font-style: normal;
+                        font-size: $size01;
+                        line-height: 15px;
+                        color: $color01;
+                    }
+                }
+                .sidebar_arrow {
+                    .up_arrow {
+                        @include display(none);
+                        &.unhide_arrow {
+                            @include display(block);
+                        }
+                    }
+                    .down_arrow {
+                        @include display(block);
+                        &.hide_arrow {
+                            @include display(none);
+                        }
+                    }
+                }
+                &.change_padding {
+                    padding-top: 14px;
+                    padding-bottom: 14px;
+                }
+            }
+            @include tablet {
+                position: static;
+                width: 100%;
+                padding: 0px 20px;
+                border-radius: 12px;
+                box-shadow: 0 0 30px rgba(20, 29, 41, 0.12);
+                margin-top: 40px;
+                margin-right: 0px;
+            }
+        }
+        .category_block {
+            width: 100%;
+            margin-top: 84px;
+            .category_title {
+                margin-bottom: 60px;
+                font-family: 'MyriadGEOMtavruliMedium';
+                font-weight: 500;
+                font-style: normal;
+                font-size: $size07;
+                line-height: 34px;
+                color: $color06;
+                transition: 0.3s linear;
+                &:hover {
+                    color: $color01;
+                }
+                @include tablet {
+                    @include display(none);
+                }
+            }
+            .about_categories {
+                @include display(flex);
+                @include flex(space-between,
+                center);
+                margin-bottom: 60px;
+                font-family: 'MyriadGEOMtavruliMedium';
+                font-weight: 500;
+                font-style: normal;
+                font-size: $size07;
+                line-height: 34px;
+                color: $color06;
+                .categories_info_span {
+                    color: $color01;
+                }
+                .search {
+                    @include display(flex);
+                    align-items: center;
+                    .search_link {
+                        font-family: 'FiraGO';
+                        font-weight: 500;
+                        font-style: italic;
+                        font-size: $size03;
+                        line-height: 19px;
+                        color: $color06;
+                    }
+                }
+                @include mobile {
+                    @include display(none);
+                }
+                &.mobile {
+                    @include tablet {
+                        @include display (block);
+                        margin-bottom: 40px;
+                        .categories_info {
+                            margin-bottom: 8px;
+                        }
+                    }
+                }
+            }
+            .categories {
+                width: 100%;
+                @include display(flex);
+                @include flex(space-between,
+                center);
+                flex-wrap: wrap;
+                margin-bottom: 60px;
+                .category {
+                    width: calc(50% - 12px);
+                    padding: 20px;
+                    margin-bottom: 25px;
+                    @include display(flex);
+                    @include flex(space-between,
+                    center);
+                    flex-direction: column;
+                    border-radius: 15px;
+                    box-shadow: 0 0 30px rgba(20, 29, 41, 0.12);
+                    background-color: $color08;
+                    transition: all 0.3s ease;
+                    .categories_information {
+                        width: 100%;
+                        padding-bottom: 25px;
+                        @include display(flex);
+                        .category_image_wrapper {
+                            width: 50%;
+                            @include display(flex);
+                            flex-shrink: 0;
+                            .category_image {
+                                border-radius: 15px;
+                                @include ParentOfPhoto;
+                                height: min-content;
+                                width: 100%;
+                                @include display(flex);
+                                img {
+                                    @include photo;
+                                    transition: 0.2s all;
+                                }
+                                &:hover {
+                                    position: relative;
+                                    overflow: hidden;
+                                    img {
+                                        &:hover {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .category_info {
+                            width: 50%;
+                            padding-left: 20px;
+                            .category_link {
+                                .category_title {
+                                    @include textLine(2);
+                                    height: 56px;
+                                    font-family: 'Helvetica Neue';
+                                    font-weight: bold;
+                                    font-size: $size04;
+                                    line-height: 28px;
+                                    color: $color06;
+                                    transition: 0.3s linear;
+                                    margin-bottom: 14px;
+                                    @include tablet {
+                                        font-size: $size01;
+                                    }
+                                    &:hover {
+                                        color: $color01;
+                                    }
+                                }
+                            }
+                            .id {
+                                display: block;
+                                margin-top: 14px;
+                                margin-bottom: 16px;
+                                font-family: 'FiraGO';
+                                font-weight: 500;
+                                font-size: $size03;
+                                line-height: 19px;
+                                color: $color03;
+                                @include tablet {
+                                    font-size: $size01;
+                                }
+                            }
+                            .price {
+                                @include display(flex);
+                                align-items: center;
+                                white-space: nowrap;
+                                .category_price {
+                                    margin-right: 10px;
+                                    font-family: 'FiraGO';
+                                    font-weight: bold;
+                                    font-size: $size06;
+                                    line-height: 27px;
+                                    color: $color06;
+                                    &.disc {
+                                        color: $color01;
+                                    }
+                                    @include tablet {
+                                        font-size: $size03;
+                                    }
+                                }
+                                .category_discount {
+                                    font-family: 'FiraGO Book';
+                                    font-weight: normal;
+                                    font-style: normal;
+                                    font-size: $size03;
+                                    line-height: 19px;
+                                    color: $color06;
+                                    text-decoration: line-through;
+                                    @include tablet {
+                                        font-size: $size01;
+                                    }
+                                }
+                            }
+                            @include smallDesktop {
+                                padding-left: 10px;
+                            }
+                            @include tablet {
+                                padding-left: 15px;
+                            }
+                        }
+                        @include tablet {
+                            padding-bottom: 16px;
+                        }
+                    }
+                    .more {
+                        font-family: 'FiraGO Book';
+                        font-weight: normal;
+                        font-style: normal;
+                        font-size: $size02;
+                        line-height: 22.4px;
+                        color: $color06;
+                    }
+                    &:nth-child(5n),
+                    &:nth-child(6n) {
+                        margin-bottom: 0px;
+                    }
+                    @include tablet {
+                        padding: 10px;
+                        margin-bottom: 10px;
+                        &:nth-child(3n) {
+                            margin-bottom: 0;
+                        }
+                    }
+                    @include mobile {
+                        width: 100%;
+                        &:nth-child(4n),
+                        &:nth-child(5n),
+                        &:nth-child(6n) {
+                            @include display(none);
+                        }
+                    }
+                    &:hover {
+                        box-shadow: 0 0 10px rgba(23, 23, 23, 0.6);
+                    }
+                }
+                @include tablet {
+                    margin-bottom: 30px;
+                }
+            }
+            @include tablet {
+                margin-top: 40px;
+            }
+        }
+        @include tablet {
+            flex-wrap: wrap;
+        }
+    }
+    .products {
+        width: 100%;
+        @include display(flex);
+        justify-content: space-between;
+        .sidebar {
+            width: 340px;
+            @include display(flex);
+            flex-direction: column;
+            flex-shrink: 0;
+            margin-right: 25px;
+            background-color: $color08;
+            padding-top: 89px;
+            padding-left: 50px;
+            .sidebar_menu_box {
+                .saidbar_menu {
+                    .sidebar_list {
+                        .hassubmenu {
+                            // li , that has dropdown menu
+                            &.show .dropdown_menu {
+                                @include display(block);
+                            }
+                        }
+                        .sidebar_li {
+                            margin-bottom: 27px;
+                            .sidebar_span {
+                                font-family: 'MyriadGEOMtavruliMedium';
+                                font-weight: 500;
+                                font-style: normal;
+                                font-size: $size03;
+                                line-height: 19px;
+                                color: $color06;
+                                transition: 0.3s linear;
+                                &:hover {
+                                    color: $color01;
+                                }
+                            }
+                            .dropdown_menu {
+                                margin-top: 20px;
+                                margin-bottom: 27px;
+                                @include display(none);
+                                transition: 2s linear;
+                                .dropdown_item {
+                                    padding-left: 20px;
+                                    margin-bottom: 16px;
+                                    &:last-child {
+                                        margin-bottom: 0px;
+                                    }
+                                    .dropdown_link {
+                                        font-family: 'FiraGO Book';
+                                        font-weight: normal;
+                                        font-style: normal;
+                                        font-size: $size03;
+                                        line-height: 19px;
+                                        color: $color06;
+                                        transition: all 0.3s linear;
+                                        &.active {
+                                            color: $color01;
+                                        }
+                                        &:hover {
+                                            color: $color01;
+                                        }
+                                    }
+                                }
+                            }
+                            &:last-child {
+                                margin-bottom: 0px;
+                            }
+                        }
+                        @include tablet {
+                            margin-top: 17px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                    @include tablet {
+                        // @include display(none);
+                        border-top: 2px solid $color11;
+                    }
+                }
+                @include tablet {
+                    @include display(none);
+                    &.unhide {
+                        @include display(block);
+                    }
+                }
+            }
+            .top_sidebar {
+                padding-top: 9px;
+                padding-bottom: 9px;
+                @include display(flex);
+                @include flex(space-between,
+                center);
+                @include display(none);
+                @include tablet {
+                    @include display(flex);
+                }
+                .clicks {
+                    .on_click_product {
+                        margin-bottom: 2px;
+                        font-family: 'Helvetica Neue';
+                        font-weight: bold;
+                        font-style: normal;
+                        font-size: $size03;
+                        line-height: 19px;
+                        color: $color06;
+                        &.change_font {
+                            font-family: 'Helvetica Neue';
+                            font-weight: bold;
+                            font-style: normal;
+                        }
+                    }
+                    .on_click {
+                        font-family: 'Helvetica Neue';
+                        font-weight: bold;
+                        font-style: normal;
+                        font-size: $size01;
+                        line-height: 15px;
+                        color: $color01;
+                    }
+                }
+                .sidebar_arrow {
+                    .up_arrow {
+                        @include display(none);
+                        &.unhide_arrow {
+                            @include display(block);
+                        }
+                    }
+                    .down_arrow {
+                        @include display(block);
+                        &.hide_arrow {
+                            @include display(none);
+                        }
+                    }
+                }
+                &.change_padding {
+                    padding-top: 14px;
+                    padding-bottom: 14px;
+                }
+            }
+            @include tablet {
+                width: 100%;
+                padding: 0px 20px;
+                border-radius: 12px;
+                box-shadow: 0 0 30px rgba(20, 29, 41, 0.12);
+                margin-top: 40px;
+                &.unhide {
+                    width: 100%;
+                    position: absolute;
+                }
+            }
+        }
+        .product_item {
+            width: 100%;
+            padding: 30px 25px 51px 30px;
+            @include display(flex);
+            @include flex(start,
+            start);
+            flex-direction: row;
+            margin-top: 60px;
+            margin-bottom: 110px;
+            margin-left: 17px;
+            border-radius: 15px;
+            background-color: $color08;
+            .product_info {
+                width: 55%;
+                .hide {
+                    @include display(none);
+                    @include tablet {
+                        @include display(block);
+                        .product_title {
+                            margin-bottom: 10px;
+                            font-family: 'MyriadGEOMtavruliMedium';
+                            font-weight: 500;
+                            font-style: normal;
+                            font-size: $size06;
+                            line-height: 28px;
+                            color: $color06;
+                        }
+                        .product_id {
+                            margin-bottom: 16px;
+                            font-family: 'FiraGO';
+                            font-weight: 500;
+                            font-size: $size03;
+                            line-height: 19px;
+                            color: $color03;
+                        }
+                        .price {
+                            margin-top: 16px;
+                            margin-bottom: 30px;
+                            .product_price {
+                                font-family: 'FiraGO';
+                                font-weight: bold;
+                                font-size: $size06;
+                                line-height: 27px;
+                                color: $color01;
+                            }
+                            .product_discount {
+                                font-family: 'FiraGO Book';
+                                font-weight: normal;
+                                font-style: normal;
+                                font-size: $size03;
+                                line-height: 19px;
+                                color: $color06;
+                                text-decoration: line-through;
+                            }
+                        }
+                    }
+                }
+                .product_image {
+                    border-radius: 15px;
+                    border: 1px solid $color11;
+                    .product_img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .slide_show {
+                    @include display(flex);
+                    @include flex(space-between,
+                    center);
+                    margin-top: 16px;
+                    .slide_images {
+                        .slide {
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 15px;
+                            border: 1px solid $color11;
+                            margin-right: 10px;
+                            &:last-child {
+                                margin-right: 0px;
+                            }
+                            &.active {
+                                border-color: $color06;
+                                @include tablet {
+                                    opacity: 1;
+                                }
+                            }
+                            @include tablet {
+                                opacity: 0.3;
+                                border: none;
+                            }
+                        }
+                    }
+                    .slide_arrow {
+                        position: relative;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 10px;
+                        background-color: $color01;
+                        border: none;
+                        svg {
+                            position: absolute;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                    @include tablet {
+                        margin-top: 10px;
+                    }
+                }
+                @include tablet {
+                    width: 100%;
+                }
+            }
+            .product_information {
+                width: calc(45% - 25px);
+                margin-left: 25px;
+                .title_info {
+                    .product_title {
+                        margin-bottom: 10px;
+                        font-family: 'MyriadGEOMtavruliMedium';
+                        font-weight: 500;
+                        font-style: normal;
+                        font-size: $size07;
+                        line-height: 28px;
+                        color: $color06;
+                    }
+                    .product_id {
+                        margin-bottom: 16px;
+                        font-family: 'FiraGO';
+                        font-weight: 500;
+                        font-size: $size03;
+                        line-height: 19px;
+                        color: $color03;
+                    }
+                    .price {
+                        margin-top: 16px;
+                        margin-bottom: 30px;
+                        .product_price {
+                            font-family: 'FiraGO';
+                            font-weight: bold;
+                            font-size: $size06;
+                            line-height: 27px;
+                            color: $color01;
+                        }
+                        .product_discount {
+                            font-family: 'FiraGO Book';
+                            font-weight: normal;
+                            font-style: normal;
+                            font-size: $size03;
+                            line-height: 19px;
+                            color: $color06;
+                            text-decoration: line-through;
+                        }
+                    }
+                    @include tablet {
+                        @include display(none);
+                    }
+                }
+                .product_text {
+                    font-family: 'FiraGO Book';
+                    font-weight: normal;
+                    font-style: normal;
+                    font-size: $size02;
+                    line-height: 28px;
+                    color: $color06;
+                }
+                @include tablet {
+                    width: 100%;
+                    margin-top: 20px;
+                    margin-left: 0px;
+                }
+            }
+            @include tablet {
+                @include display(flex);
+                padding-left: 0px;
+                padding-right: 0px;
+                width: 100%;
+                flex-wrap: wrap;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                background-color: $color10;
+                &.hide {
+                    margin-top: 10px;
+                }
+            }
+        }
+        @include tablet {
+            position: relative;
+            flex-wrap: wrap;
+        }
+    }
+    &.search_input_show {
+        padding-top: 60px;
+    }
+}
+
+//photo and video gallery
+.main_wrapper {
+    &.modal_open {
+        &:after {
+            content: "";
+            top: 0;
+            left: 0;
+            background-color: rgba(23, 23, 23, 0.7);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 10;
+        }
+    }
+}
+
+.gallery_cards {
+    padding-top: 84px;
+    background-color: $color10;
+    .title {
+        font-family: 'MyriadGEOMtavruliMedium';
+        font-weight: 500;
+        font-style: normal;
+        font-size: $size07;
+        line-height: 34px;
+        color: $color06;
+        @include tablet {
+            font-size: $size04;
+        }
+    }
+    .all_cards {
+        margin-bottom: 35px;
+        .cards {
+            margin-top: 60px;
+            @include display(flex);
+            @include flex(space-between,
+            center);
+            flex-wrap: wrap;
+            .modal_photo {
+                display: none;
+            }
+            .card {
+                width: calc(100%/3 - 12px);
+                margin-bottom: 25px;
+                @include display(flex);
+                @include flex(center,
+                start);
+                flex-direction: column;
+                cursor: pointer;
+                .photo {
+                    @include fullParentOfPhoto;
+                    width: 100%;
+                    .image {
+                        @include photo;
+                        border-radius: 15px;
+                    }
+                }
+                .video {
+                    @include fullParentOfPhoto;
+                    width: 100%;
+                    .image {
+                        @include photo;
+                        border-radius: 15px;
+                    }
+                }
+                .card_title {
+                    margin-top: 12px;
+                    font-family: 'MyriadGEOMtavruliMedium';
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: $size04;
+                    line-height: 28px;
+                    color: $color06;
+                    @include tablet {
+                        font-size: $size01;
+                        margin-top: 13px;
+                    }
+                }
+                @include tablet {
+                    width: calc(100%/2 - 5px);
+                    margin-bottom: 20px;
+                }
+            }
+            @include tablet {
+                margin-top: 49px;
+            }
+        }
+        @include tablet {
+            margin-bottom: 20px;
+        }
+    }
+    @include tablet {
+        padding-top: 36px;
+    }
+}
+
+.modal_box {
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    &.show {
+        @include display (flex);
+        @include flex(center,
+        center);
+        position: absolute;
+        .modal_body {
+            width: 65%;
+            border-radius: 15px;
+            overflow: hidden;
+            .image_wrapper {
+                @include fullParentOfPhoto;
+                z-index: 10;
+                .image {
+                    @include photo;
+                }
+            }
+            @include mobile {
+                width: 90%;
+            }
+        }
+        .card {
+            width: 65%;
+            z-index: 10;
+            .video {
+                .title {
+                    margin-bottom: 30px;
+                    font-family: 'MyriadGEOMtavruliMedium';
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: $size07;
+                    line-height: 34px;
+                    color: $color08;
+                }
+                .video_wrapper {
+                    @include fullParentOfPhoto;
+                    .video_link {
+                        @include photo;
+                        border-radius: 15px;
+                        overflow: hidden;
+                    }
+                }
+            }
+            @include tablet {
+                width: 90%;
+            }
+        }
+    }
+}
+
+// contact page
+.contact_page {
+    margin-bottom: 128px;
+    margin-top: 84px;
+    .contact_title {
+        font-family: 'MyriadGEOMtavruliMedium';
+        font-weight: 500;
+        font-style: normal;
+        font-size: $size07;
+        line-height: 34px;
+        color: $color06;
+    }
+    .map_information {
+        .contact_list {
+            width: 100%;
+            @include display(flex);
+            @include flex(space-between,
+            center);
+            margin-top: 60px;
+            .contact_li {
+                width: 25%;
+                .contact_icon {
+                    width: 50px;
+                    height: 50px;
+                }
+                .contact_adress {
+                    display: block;
+                    margin-top: 21px;
+                    margin-bottom: 7px;
+                    font-family: 'MyriadGEOMtavruliMedium';
+                    font-weight: 500;
+                    font-style: normal;
+                    font-size: $size03;
+                    line-height: 19px;
+                    color: $color06;
+                    opacity: 0.3;
+                }
+                .contact_details {
+                    display: block;
+                    font-family: 'FiraGO';
+                    font-weight: normal;
+                    font-style: normal;
+                    font-size: $size06;
+                    line-height: 27px;
+                    color: $color12;
+                }
+                @include tablet {
+                    margin: 20px;
+                    width: calc(50% - 40px);
+                    &:nth-child(3),
+                    &:nth-child(4) {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+            @include tablet {
+                flex-wrap: wrap;
+                margin-top: 40px;
+            }
+        }
+        .map {
+            width: 100%;
+            height: 320px;
+            margin-top: 87px;
+            iframe {
+                width: 100%;
+            }
+            @include tablet {
+                margin-top: 40px;
+            }
+        }
+        @include tablet {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    @include tablet {
+        margin-bottom: 40px;
+        margin-top: 36px;
+    }
+}

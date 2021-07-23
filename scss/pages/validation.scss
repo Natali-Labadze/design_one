@@ -1,0 +1,144 @@
+@import './../modules/variable';
+@import './../modules/function';
+@import './../modules/mixins';
+@import './../modules/private';
+@import './../basic/font';
+@import './../basic/reset';
+.validation {
+    padding-top: 84px;
+    padding-bottom: 402px;
+    background-color: $color10;
+    .branches {
+        font-family: 'MyriadGEOMtavruliMedium';
+        font-weight: 500;
+        font-style: normal;
+        font-size: $size07;
+        line-height: 34px;
+        color: $color06;
+        @include tablet {
+            font-size: $size04;
+            @include display(block);
+            text-align: center;
+        }
+        @include mobile {
+            text-align: start;
+        }
+    }
+    .validation_form {
+        @include display(flex);
+        @include flex(center, center);
+        flex-direction: column;
+        margin-top: 110px;
+        .validation_text {
+            width: 463px;
+            font-family: 'FiraGO';
+            font-weight: 600;
+            font-style: normal;
+            font-size: $size03;
+            line-height: 25.6px;
+            color: $color06;
+            @include tablet {
+                width: 334px;
+            }
+            @include mobile {
+                width: 100%;
+            }
+        }
+        .text {
+            width: 463px;
+            height: 56px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            outline: none;
+            cursor: pointer;
+            border: 1px solid $color11;
+            font-family: 'FiraGO';
+            font-weight: 600;
+            font-style: normal;
+            font-size: $size03;
+            line-height: 25.6px;
+            color: $color01;
+            text-indent: 30px;
+            &:focus {
+                border: 1px solid $color01;
+            }
+            &::placeholder {
+                font-family: 'FiraGO';
+                font-size: $size03;
+                font-style: normal;
+                line-height: 25.6px;
+                color: $color03;
+            }
+            @include tablet {
+                width: 334px;
+            }
+            @include mobile {
+                width: 100%;
+            }
+        }
+        .validation_button {
+            width: 463px;
+            height: 56px;
+            border: none;
+            cursor: pointer;
+            border-radius: 15px;
+            background-color: $color01;
+            .validation_title {
+                font-family: 'MyriadGEOMtavruliMedium';
+                font-weight: 500;
+                font-style: normal;
+                font-size: $size04;
+                line-height: 28px;
+                color: $color08;
+                transition: font-size 0.2s linear;
+                &:hover {
+                    font-size: $size05;
+                }
+            }
+            @include tablet {
+                width: 334px;
+            }
+            @include mobile {
+                width: 100%;
+            }
+            &:hover {
+                background-color: rgba(228, 25, 11, 0.9);
+            }
+        }
+        .validation_info {
+            @include flex(center, center);
+            width: 707px;
+            height: 110px;
+            margin-top: 70px;
+            border: 1px solid $color01;
+            border-radius: 15px;
+            background-color: rgba(228, 25, 11, 0.1);
+            font-family: 'MyriadGEOMtavruliMedium';
+            font-weight: 500;
+            font-style: normal;
+            font-size: $size04;
+            line-height: 28px;
+            color: $color01;
+            display: none;
+            @include tablet {
+                margin-top: 40px;
+                width: 334px;
+                height: 70px;
+            }
+            @include mobile {
+                width: 100%;
+            }
+        }
+        @include tablet {
+            margin-top: 90px;
+        }
+        @include mobile {
+            width: 100%;
+        }
+    }
+    @include tablet {
+        padding-top: 36px;
+        padding-bottom: 90px;
+    }
+}

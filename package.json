@@ -1,0 +1,27 @@
+{
+  "name": "design_one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Natali-Labadze/design_one.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Natali-Labadze/design_one/issues"
+  },
+  "homepage": "https://github.com/Natali-Labadze/design_one#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^6.0.0"
+  },
+  "dependencies": {
+    "swiper": "^6.7.5"
+  }
+}

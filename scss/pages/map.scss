@@ -1,0 +1,53 @@
+@import './../modules/variable';
+@import './../modules/function';
+@import './../modules/mixins';
+@import './../modules/private';
+@import './../basic/font';
+@import './../basic/reset';
+@import './header.scss';
+@import './section.scss';
+@import './footer.scss';
+@import './validation.scss';
+.map_contact {
+    height: 837px;
+    width: 100%;
+    .map {
+        height: 100%;
+        width: 100%;
+        .map_content {
+            width: 281px;
+            height: 133px;
+            padding: 18px 30px;
+            border-radius: 20px;
+            box-shadow: rgba(20, 29, 41, 0.12);
+            .map_info {
+                margin-bottom: 10px;
+                @include display(flex);
+                @include flex(flex-start, center);
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+            .map_svg_icon {
+                margin-right: 10px;
+                width: 26px;
+                height: 26px;
+                path {
+                    fill: $color12;
+                }
+            }
+            .map_title {
+                font-family: 'FiraGO';
+                font-weight: normal;
+                font-style: normal;
+                color: $color12;
+                font-size: $size03;
+                line-height: 19px;
+            }
+        }
+    }
+    @include tablet {
+        height: 720px;
+        width: 100%;
+    }
+}

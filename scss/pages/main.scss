@@ -1,0 +1,78 @@
+@import './../modules/variable';
+@import './../modules/function';
+@import './../modules/mixins';
+@import './../modules/private';
+@import './../basic/font';
+@import './../basic/reset';
+@import './header.scss';
+@import './section.scss';
+@import './footer.scss';
+@import './validation.scss';
+@import './map.scss';
+// container width
+.container {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    @include fullHD {
+        width: 90%;
+    }
+    @include smallDesktop {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    // @include tablet {
+    //     width: 100%;
+    // }
+}
+
+// pagination
+.pagination {
+    padding-bottom: 110px;
+    @include display(flex);
+    @include flex(center, center);
+    .pagination_list {
+        display: flex;
+        .pagination_li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            border: 1px solid #E8E9EC;
+            margin-right: 8px;
+            border-radius: 4px;
+            font-family: 'Helvetica Neue';
+            font-weight: bold;
+            font-style: normal;
+            font-size: $size03;
+            color: $color06;
+            cursor: pointer;
+            transition: 0.3s linear;
+            &.active {
+                color: $color08;
+                background-color: $color01;
+            }
+            &:hover path {
+                fill: white;
+            }
+            &:hover {
+                color: $color08;
+                background-color: $color01;
+            }
+            @include mobile {
+                width: 47px;
+                height: 36px;
+                font-size: $size01;
+            }
+        }
+        @include mobile {
+            width: 100%;
+            @include flex(space-between, center);
+        }
+    }
+    @include tablet {
+        padding-bottom: 40px;
+    }
+}
