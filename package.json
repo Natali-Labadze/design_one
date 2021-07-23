@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Natali-Labadze/design_one#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-sass": "^4.1.0",
     "node-sass": "^6.0.0"
   },

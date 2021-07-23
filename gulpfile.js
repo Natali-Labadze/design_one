@@ -1,16 +1,25 @@
 'use strict';
 
 var gulp = require('gulp');
+const autoPrefixer = require('gulp-autoprefixer');
 var sass = require('gulp-sass');
 
 sass.compiler = require('node-sass');
 
+gulp.task('autoprefixer', function(done) {
+    gulp.src('styles/style.css')
+        .pipe(autoprefixer({ cascade: false }))
+        .pipe(gulp.dest("styles"));
+    done();
+})
+
 gulp.task('sass', function() {
     return gulp.src('scss/style.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoPrefixer())
         .pipe(gulp.dest('styles'));
 });
 
 gulp.task('watch', function() {
-    gulp.watch('scss/*/**.scss', gulp.parallel('sass'));
+    gulp.watch('scss/*/**.scss', gulp.series('sass', 'autoprefixer'));
 });
