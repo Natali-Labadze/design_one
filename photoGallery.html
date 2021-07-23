@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
-    <title>videogallery</title>
+    <title>photogallery</title>
 </head>
 
 <body>
@@ -301,7 +301,7 @@
                         </ul>
                         <div class="language">
                             <ul class="language_list">
-                                <li class="language_li"><a class="language_link" href="#"><span class="active">GEO</span></a></li>
+                                <li class="language_li"><a class="language_link" href="#"><span>GEO</span></a></li>
                                 <li class="language_li"><a class="language_link" href="#"><span>ENG</span></a></li>
                                 <li class="language_li"><a class="language_link" href="#"><span>RUS</span></a></li>
                             </ul>
@@ -364,48 +364,50 @@
         </div>
     </header>
     <section class="gallery_cards">
+        <div class="cards_wrapper" id="cards_wrapper" onclick="closeOneCard()"></div>
         <div class="container">
             <div class="all_cards">
-                <span class="title">ვიდეო გალერეა</span>
+                <span class="title">ფოტოგალერეა</span>
                 <div class="cards">
                     <div class="card">
-                        <div class="video" onclick="showOneCard()">
-                            <img src="../images/photo_of_video.png" alt="photo_of_gallery" class="image">
+                        <div class="photo" onclick="showOneCard()">
+                            <img src="../images/photo_of_gallery.png" alt="photo_of_gallery" class="image">
                         </div>
                         <h4 class="card_title">სათაური</h4>
                     </div>
                     <div class="card">
-                        <div class="video" onclick="showOneCard()">
-                            <img src="../images/photo_of_video.png" alt="photo_of_gallery" class="image">
+                        <div class="photo" onclick="showOneCard()">
+                            <img src="../images/photo_of_gallery.png" alt="photo_of_gallery" class="image">
                         </div>
                         <h4 class="card_title">სათაური</h4>
                     </div>
                     <div class="card">
-                        <div class="video" onclick="showOneCard()">
-                            <img src="../images/photo_of_video.png" alt="photo_of_gallery" class="image">
+                        <div class="photo" onclick="showOneCard()">
+                            <img src="../images/photo_of_gallery.png" alt="photo_of_gallery" class="image">
                         </div>
                         <h4 class="card_title">სათაური</h4>
                     </div>
                     <div class="card">
-                        <div class="video" onclick="showOneCard()">
-                            <img src="../images/photo_of_video.png" alt="photo_of_gallery" class="image">
+                        <div class="photo" onclick="showOneCard()">
+                            <img src="../images/photo_of_gallery.png" alt="photo_of_gallery" class="image">
                         </div>
                         <h4 class="card_title">სათაური</h4>
                     </div>
                     <div class="card">
-                        <div class="video" onclick="showOneCard()">
-                            <img src="../images/photo_of_video.png" alt="photo_of_gallery" class="image">
+                        <div class="photo" onclick="showOneCard()">
+                            <img src="../images/photo_of_gallery.png" alt="photo_of_gallery" class="image">
                         </div>
                         <h4 class="card_title">სათაური</h4>
                     </div>
                     <div class="card">
-                        <div class="video" onclick="showOneCard()">
-                            <img src="../images/photo_of_video.png" alt="photo_of_gallery" class="image">
+                        <div class="photo" onclick="showOneCard()">
+                            <img src="../images/photo_of_gallery.png" alt="photo_of_gallery" class="image">
                         </div>
                         <h4 class="card_title">სათაური</h4>
                     </div>
                 </div>
             </div>
+
             <div class="pagination">
                 <ul class="pagination_list">
                     <li class="pagination_li">
@@ -632,19 +634,14 @@
         </div>
     </footer>
     <div class="modal_box" id="modal_box">
-        <div class="card">
-            <div class="video" onclick="showOneCard()">
-                <h3 class="title">სათაური</h3>
-                <div class="video_wrapper">
-                    <video id="vid" class="video_link" controls="controls" preload="none">
-                    <source class="video_source" id="video_source" src="../videos/video.mp4" type="video/mp4" autoplay="false" autostart="false" >
-                  </video>
-                </div>
+        <div class="modal_body">
+            <div class="image_wrapper">
+                <img src="../images/gallery.png" alt="photo_of_gallery" class="image">
             </div>
         </div>
     </div>
-    <script src="../js files/main.js"></script>
-    <script src="../js files/gallery.js"></script>
+    <script src="js files/main.js"></script>
+    <script src="js files/gallery.js"></script>
 </body>
 
 </html>

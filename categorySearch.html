@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
-    <title>contact</title>
+    <title>category search</title>
 </head>
 
 <body>
@@ -299,7 +299,7 @@
                         </ul>
                         <div class="language">
                             <ul class="language_list">
-                                <li class="language_li"><a class="language_link" href="#"><span>GEO</span></a></li>
+                                <li class="language_li"><a class="language_link" href="#"><span class="active">GEO</span></a></li>
                                 <li class="language_li"><a class="language_link" href="#"><span>ENG</span></a></li>
                                 <li class="language_li"><a class="language_link" href="#"><span>RUS</span></a></li>
                             </ul>
@@ -361,67 +361,234 @@
             </div>
         </div>
     </header>
-    <section class="contact_page">
+    <section class="base_categories" id="base_categories">
         <div class="container">
-            <span class="contact_title">კონტაქტი</span>
-            <div class="map_information">
-                <ul class="contact_list">
-                    <li class="contact_li">
-                        <div class="contact_icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-                        <g id="Group_407" data-name="Group 407" transform="translate(-284.747 -672.747)">
-                          <rect id="Rectangle_272" data-name="Rectangle 272" width="50" height="50" transform="translate(284.747 672.747)" fill="rgba(255,255,255,0)"/>
-                          <path id="location-point" d="M34.406,7.183a18.372,18.372,0,0,0-25.591,0,17.451,17.451,0,0,0,0,25.051L20.053,43.257a2.165,2.165,0,0,0,3.028,0L34.406,32.13a17.378,17.378,0,0,0,0-24.947Zm-3.05,21.962L21.61,38.727l-9.746-9.582a13.286,13.286,0,0,1,.006-19.069,13.987,13.987,0,0,1,19.48,0A13.286,13.286,0,0,1,31.356,29.145ZM15.212,13.3a8.884,8.884,0,0,0,0,12.734,9.336,9.336,0,0,0,9.974,1.975,9,9,0,0,0,5.722-8.238A8.758,8.758,0,0,0,28.221,13.4a9.31,9.31,0,0,0-13.009-.1Zm10,9.77a5.049,5.049,0,0,1-6.279.645,4.808,4.808,0,0,1-1.857-5.907,4.992,4.992,0,0,1,5.564-2.922,4.891,4.891,0,0,1,4,4.781,4.818,4.818,0,0,1-1.535,3.4Z" transform="translate(288.148 674.813)"/>
-                        </g>
-                      </svg>
+            <div class="category_section">
+                <aside class="sidebar">
+                    <div class="top_sidebar" id="change_padding" onclick=" openSidebar()">
+                        <div class="clicks">
+                            <div class="on_click_product" id="submits">პროფილები</div>
+                            <div class="on_click" id="submit">ტიხრის პროფილი</div>
                         </div>
-                        <span class="contact_adress">მისამართი</span>
-                        <span class="contact_details">თბილისი, ბოჭორმის ქ.8</span>
-                    </li>
-                    <li class="contact_li">
-                        <div class="contact_icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-                        <g id="Group_408" data-name="Group 408" transform="translate(-454.719 -660.719)">
-                          <rect id="Rectangle_273" data-name="Rectangle 273" width="50" height="50" transform="translate(454.719 660.719)" fill="rgba(255,255,255,0)"/>
-                          <path id="mobile-android" d="M20.707,31.889l-.306-.251a1.533,1.533,0,0,0-.367-.188l-.367-.167a2,2,0,0,0-1.854.565,2.415,2.415,0,0,0-.428.69,2.133,2.133,0,0,0,.435,2.276,2,2,0,0,0,2.213.464,2.97,2.97,0,0,0,.672-.46,2.133,2.133,0,0,0,.428-2.28,2.1,2.1,0,0,0-.428-.648ZM27.41,2h-16.3A6.2,6.2,0,0,0,5,8.275V37.557a6.2,6.2,0,0,0,6.112,6.275h16.3a6.2,6.2,0,0,0,6.112-6.275V8.275A6.2,6.2,0,0,0,27.41,2Zm2.037,35.557a2.065,2.065,0,0,1-2.037,2.092h-16.3a2.065,2.065,0,0,1-2.037-2.092V8.275a2.065,2.065,0,0,1,2.037-2.092h16.3a2.065,2.065,0,0,1,2.037,2.092Z" transform="translate(460.458 662.803)"/>
-                        </g>
-                      </svg>
+                        <div class="sidebar_arrow">
+                            <div class="down_arrow" id="down_arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11.314" height="7.071" viewBox="0 0 11.314 7.071">
+                                <g id="Group_430" data-name="Group 430" transform="translate(-70.711 -350.725) rotate(45)">
+                                  <rect id="Rectangle_282" data-name="Rectangle 282" width="8" height="2" transform="translate(299 197)" fill="#242424"/>
+                                  <rect id="Rectangle_283" data-name="Rectangle 283" width="8" height="2" transform="translate(307 191) rotate(90)" fill="#242424"/>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="up_arrow" id="up_arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11.314" height="7.071" viewBox="0 0 11.314 7.071">
+                                <g id="Group_468" data-name="Group 468" transform="translate(0 5.657) rotate(-45)">
+                                  <rect id="Rectangle_282" data-name="Rectangle 282" width="8" height="2" transform="translate(0 0)" fill="#242424"/>
+                                  <rect id="Rectangle_283" data-name="Rectangle 283" width="8" height="2" transform="translate(6 8) rotate(-90)" fill="#242424"/>
+                                </g>
+                              </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar_menu_box" id="sidebar_menu_box">
+                        <nav class="saidbar_menu " id="saidbar_menu">
+                            <ul class="sidebar_list">
+                                <li class="sidebar_li hassubmenu">
+                                    <span class="sidebar_span">პროფილები</span>
+                                    <ul class="dropdown_menu">
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">ჭერის პროფილი</a></li>
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">ტიხრის პროფილი</a></li>
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">კარის პროფილი</a></li>
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">ყველას ნახვა</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sidebar_li hassubmenu">
+                                    <span class="sidebar_span">აქსესუარები</span>
+                                    <ul class="dropdown_menu">
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">აქსესუარები 1</a></li>
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">აქსესუარები 2</a></li>
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">აქსესუარები 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sidebar_li hassubmenu">
+                                    <span class="sidebar_span">კუთხოვანა</span>
+                                    <ul class="dropdown_menu">
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">კუთხოვანა 1</a></li>
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">კუთხოვანა 2</a></li>
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">კუთხოვანა 3</a></li>
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">კუთხოვანა 4</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sidebar_li hassubmenu">
+                                    <span class="sidebar_span">დუბელი</span>
+                                    <ul class="dropdown_menu">
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">დუბელი 1</a></li>
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">დუბელი 2</a></li>
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">დუბელი 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sidebar_li hassubmenu">
+                                    <span class="sidebar_span">სჭვალი</span>
+                                    <ul class="dropdown_menu">
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">სჭვალი 1</a></li>
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">სჭვალი 2</a></li>
+                                        <li class="dropdown_item"><a class="dropdown_link" href="#">სჭვალი 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </aside>
+                <div class="category_block">
+                    <div class="about_categories mobile">
+                        <h3 class="categories_info">საძიებო სიტყვა"<span class="categories_info_span">პროფილი</span>"
+                        </h3>
+                        <span class="search">
+                            <a href="#" class="search_link">სულ მოიძებნა 32 შედეგი</a>
+                        </span>
+                    </div>
+                    <div class="categories">
+                        <div class="category">
+                            <div class="categories_information">
+                                <div class="category_image_wrapper">
+                                    <div class="category_image">
+                                        <img src="../images/card_01.png" alt="card_img">
+                                    </div>
+                                </div>
+                                <div class="category_info">
+                                    <a href="#" class="category_link">
+                                        <h4 class="category_title">ტიხრის პროფილი CD (ცდ)</h4>
+                                    </a>
+                                    <span class="id">#5345342</span>
+                                    <div class="price">
+                                        <span class="category_price disc"> 24.40 ₾</span>
+                                        <span class="category_discount">24.40 ₾</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="more">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს.</span>
+                        </div>
+                        <div class="category">
+                            <div class="categories_information">
+                                <div class="category_image_wrapper">
+                                    <div class="category_image">
+                                        <img src="../images/card_04.png" alt="card_img">
+                                    </div>
+                                </div>
+                                <div class="category_info">
+                                    <a href="#" class="category_link">
+                                        <h4 class="category_title">ჭერის პროფილი CD (ცდ)</h4>
+                                    </a>
+                                    <span class="id">#5345342</span>
+                                    <div class="price">
+                                        <span class="category_price"> 30.50 ₾</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="more">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს.</span>
+                        </div>
+                        <div class="category">
+                            <div class="categories_information">
+                                <div class="category_image_wrapper">
+                                    <div class="category_image">
+                                        <img src="../images/card_03.png" alt="card_img">
+                                    </div>
+                                </div>
+                                <div class="category_info">
+                                    <a href="#" class="category_link">
+                                        <h4 class="category_title">ჭერის პროფილი CD (ცდ)</h4>
+                                    </a>
+                                    <span class="id">#5345342</span>
+                                    <div class="price">
+                                        <span class="category_price disc"> 24.40 ₾</span>
+                                        <span class="category_discount">24.40 ₾</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="more">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს.</span>
+                        </div>
+                        <div class="category">
+                            <div class="categories_information">
+                                <div class="category_image_wrapper">
+                                    <div class="category_image">
+                                        <img src="../images/card_02.png" alt="card_img">
+                                    </div>
+                                </div>
+                                <div class="category_info">
+                                    <a href="#" class="category_link">
+                                        <h4 class="category_title">ტიხრის პროფილი CD (ცდ)</h4>
+                                    </a>
+                                    <span class="id">#5345342</span>
+                                    <div class="price">
+                                        <span class="category_price"> 30.50 ₾</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="more">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს.</span>
+                        </div>
+                        <div class="category">
+                            <div class="categories_information">
+                                <div class="category_image_wrapper">
+                                    <div class="category_image">
+                                        <img src="../images/card_01.png" alt="card_img">
+                                    </div>
+                                </div>
+                                <div class="category_info">
+                                    <a href="#" class="category_link">
+                                        <h4 class="category_title">ჭერის პროფილი CD (ცდ)</h4>
+                                    </a>
+                                    <span class="id">#5345342</span>
+                                    <div class="price">
+                                        <span class="category_price disc"> 24.40 ₾</span>
+                                        <span class="category_discount">24.40 ₾</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="more">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს.</span>
+                        </div>
+                        <div class="category">
+                            <div class="categories_information">
+                                <div class="category_image_wrapper">
+                                    <div class="category_image">
+                                        <img src="../images/card_04.png" alt="card_img">
+                                    </div>
+                                </div>
+                                <div class="category_info">
+                                    <a href="#" class="category_link">
+                                        <h4 class="category_title">ტიხრის პროფილი CD (ცდ)</h4>
+                                    </a>
+                                    <span class="id">#5345342</span>
+                                    <div class="price">
+                                        <span class="category_price"> 30.50 ₾</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="more">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს.</span>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <ul class="pagination_list">
+                            <li class="pagination_li">
+                                <svg id="Group_203" data-name="Group 203" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                <rect id="Rectangle_256" data-name="Rectangle 256" width="18" height="18" fill="rgba(255,255,255,0)"/>
+                                <path id="Arrow_-_Left_2" data-name="Arrow - Left 2" d="M7.781,13.789a.7.7,0,0,0,.072-.938l-.072-.081L1.8,7l5.98-5.771A.7.7,0,0,0,7.854.292L7.781.211A.767.767,0,0,0,6.81.141l-.084.07L.219,6.491a.7.7,0,0,0-.072.938l.072.081,6.507,6.28A.766.766,0,0,0,7.781,13.789Z" transform="translate(5 2)" fill="#171717"/>
+                            </svg>
+                            </li>
+                            <li class="pagination_li">1</li>
+                            <li class="pagination_li">2</li>
+                            <li class="pagination_li">3</li>
+                            <li class="pagination_li active">4</li>
+                            <li class="pagination_li">
+                                <svg id="Group_203" data-name="Group 203" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                <rect id="Rectangle_256" data-name="Rectangle 256" width="18" height="18" fill="rgba(255,255,255,0)"/>
+                                <path id="Arrow_-_Left_2" data-name="Arrow - Left 2" d="M.219,13.789a.7.7,0,0,1-.072-.938l.072-.081L6.2,7,.219,1.229A.7.7,0,0,1,.146.292L.219.211A.767.767,0,0,1,1.19.141l.084.07,6.507,6.28a.7.7,0,0,1,.072.938l-.072.081-6.507,6.28A.766.766,0,0,1,.219,13.789Z" transform="translate(5 2)" fill="#171717"/>
+                            </svg>
+                            </li>
+                        </ul>
+                    </div>
 
-                        </div>
-                        <span class="contact_adress">ტელეფონი</span>
-                        <span class="contact_details">558 420 420</span>
-                    </li>
-                    <li class="contact_li">
-                        <div class="contact_icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-                        <g id="Group_409" data-name="Group 409" transform="translate(-639 -696)">
-                          <rect id="Rectangle_274" data-name="Rectangle 274" width="50" height="50" transform="translate(639 696)" fill="rgba(255,255,255,0)"/>
-                          <path id="envelope" d="M37.962,4H8.346A6.419,6.419,0,0,0,2,10.49V32.125a6.419,6.419,0,0,0,6.346,6.49H37.962a6.419,6.419,0,0,0,6.346-6.49V10.49A6.419,6.419,0,0,0,37.962,4Zm-.867,4.327L24.656,21.048a2.082,2.082,0,0,1-3,0L9.213,8.327Zm2.983,23.8a2.14,2.14,0,0,1-2.115,2.163H8.346a2.14,2.14,0,0,1-2.115-2.163V11.377L18.669,24.1a6.247,6.247,0,0,0,8.969,0L40.077,11.377Z" transform="translate(640.846 699.692)"/>
-                        </g>
-                      </svg>
-                        </div>
-                        <span class="contact_adress">ელ.ფოსტა</span>
-                        <span class="contact_details">Info@420.GE</span>
-                    </li>
-                    <li class="contact_li">
-                        <div class="contact_icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-                        <g id="Group_410" data-name="Group 410" transform="translate(-913.97 -687.97)">
-                          <rect id="Rectangle_275" data-name="Rectangle 275" width="50" height="50" transform="translate(913.97 687.97)" fill="rgba(255,255,255,0)"/>
-                          <path id="clock" d="M29.674,24.467l-4.433-2.559V12.564a2.113,2.113,0,1,0-4.226,0V23.128a2.112,2.112,0,0,0,1.056,1.83l5.489,3.169a2.113,2.113,0,1,0,2.113-3.66ZM23.128,2A21.128,21.128,0,1,0,44.256,23.128,21.128,21.128,0,0,0,23.128,2Zm0,38.031a16.9,16.9,0,1,1,16.9-16.9A16.9,16.9,0,0,1,23.128,40.031Z" transform="translate(915.841 689.841)"/>
-                        </g>
-                      </svg>
-                        </div>
-                        <span class="contact_adress">მისამართი</span>
-                        <span class="contact_details">ორშ.-პარ. / 09:00 - 18:00</span>
-                        <span class="contact_details">შაბ.: 10:00 - 17:00</span>
-                    </li>
-                </ul>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.4328310977585!2d44.79517311463592!3d41.73275608247757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472b9d436ff3d%3A0x2f954c610861928b!2sM%20%2F%20s%20Nadzaladevi!5e0!3m2!1sen!2sge!4v1625488767339!5m2!1sen!2sge"
-                        width="1439" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
+        </div>
     </section>
     <footer class="footer_wrapper">
         <div class="container">
@@ -596,11 +763,11 @@
                             <div class="contact">
                                 <div class="contact_icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                                    <g id="Group_18" data-name="Group 18" transform="translate(-1264 -38)">
-                                      <rect id="Rectangle_154" data-name="Rectangle 154" width="26" height="26" transform="translate(1264 38)" fill="rgba(228,25,11,0)"/>
-                                      <path id="envelope-upload" d="M21.4,14.6a1.049,1.049,0,0,0-1.047,1.05v4.2A1.049,1.049,0,0,1,19.3,20.9H4.642a1.049,1.049,0,0,1-1.047-1.05V9.782l6.158,6.186a3.136,3.136,0,0,0,4.441,0l1.718-1.722a1.053,1.053,0,0,0-1.487-1.491l-1.718,1.722a1.045,1.045,0,0,1-1.466,0L5.071,8.3h6.9a1.05,1.05,0,0,0,0-2.1H4.642A3.146,3.146,0,0,0,1.5,9.352v10.5A3.146,3.146,0,0,0,4.642,23H19.3a3.146,3.146,0,0,0,3.142-3.151v-4.2A1.049,1.049,0,0,0,21.4,14.6ZM23.19,5.455,20.048,2.3a1.081,1.081,0,0,0-1.487,0L15.419,5.455a1.053,1.053,0,1,0,1.487,1.491l1.351-1.365v5.871a1.047,1.047,0,1,0,2.095,0V5.581L21.7,6.946A1.053,1.053,0,1,0,23.19,5.455Z" transform="translate(1264.5 38.495)" fill="#e4190b"/>
-                                    </g>
-                                  </svg>
+                                        <g id="Group_18" data-name="Group 18" transform="translate(-1264 -38)">
+                                          <rect id="Rectangle_154" data-name="Rectangle 154" width="26" height="26" transform="translate(1264 38)" fill="rgba(228,25,11,0)"/>
+                                          <path id="envelope-upload" d="M21.4,14.6a1.049,1.049,0,0,0-1.047,1.05v4.2A1.049,1.049,0,0,1,19.3,20.9H4.642a1.049,1.049,0,0,1-1.047-1.05V9.782l6.158,6.186a3.136,3.136,0,0,0,4.441,0l1.718-1.722a1.053,1.053,0,0,0-1.487-1.491l-1.718,1.722a1.045,1.045,0,0,1-1.466,0L5.071,8.3h6.9a1.05,1.05,0,0,0,0-2.1H4.642A3.146,3.146,0,0,0,1.5,9.352v10.5A3.146,3.146,0,0,0,4.642,23H19.3a3.146,3.146,0,0,0,3.142-3.151v-4.2A1.049,1.049,0,0,0,21.4,14.6ZM23.19,5.455,20.048,2.3a1.081,1.081,0,0,0-1.487,0L15.419,5.455a1.053,1.053,0,1,0,1.487,1.491l1.351-1.365v5.871a1.047,1.047,0,1,0,2.095,0V5.581L21.7,6.946A1.053,1.053,0,1,0,23.19,5.455Z" transform="translate(1264.5 38.495)" fill="#e4190b"/>
+                                        </g>
+                                      </svg>
                                 </div>
                                 <span class="contact_text">example@gmail.com</span>
                             </div>
@@ -611,11 +778,11 @@
                             <div class="contact">
                                 <div class="contact_icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                                        <g id="Group_20" data-name="Group 20" transform="translate(-1465 -34)">
-                                          <rect id="Rectangle_155" data-name="Rectangle 155" width="26" height="26" transform="translate(1465 34)" fill="rgba(228,25,11,0)"/>
-                                          <path id="mobile-vibrate" d="M11.048,15.972l-.174-.139-.209-.116-.209-.058a1.158,1.158,0,0,0-1.043.313.963.963,0,0,0-.255.383,1.091,1.091,0,0,0,0,.881,1.24,1.24,0,0,0,.626.626,1.158,1.158,0,0,0,.44.093,1.262,1.262,0,0,0,.452-.093,1.008,1.008,0,0,0,.371-.255,1.078,1.078,0,0,0,.336-.812.975.975,0,0,0-.093-.441,1.079,1.079,0,0,0-.243-.383ZM3.667,9.757a1.158,1.158,0,0,0,.823-.348L9.4,4.492A1.156,1.156,0,0,0,7.769,2.856L2.856,7.773a1.166,1.166,0,0,0,.811,1.983Zm20.485,7.863a1.158,1.158,0,0,0-1.634,0l-4.913,4.917a1.156,1.156,0,1,0,1.634,1.635l4.913-4.859a1.16,1.16,0,0,0,0-1.693Zm.2-6.564A3.481,3.481,0,0,0,23.341,8.6L18.417,3.668a3.566,3.566,0,0,0-4.913,0L3.667,13.514a3.481,3.481,0,0,0,0,4.917L8.592,23.36h0a3.474,3.474,0,0,0,4.913,0l9.837-9.846a3.481,3.481,0,0,0,1.008-2.459Zm-2.653.823-9.825,9.834a1.158,1.158,0,0,1-1.645,0h0L5.313,16.8a1.16,1.16,0,0,1,0-1.647l9.825-9.834a1.158,1.158,0,0,1,1.645,0L21.7,10.232a1.16,1.16,0,0,1,0,1.647Z" transform="translate(1464.481 33.481)" fill="#e4190b"/>
-                                        </g>
-                                      </svg>
+                                            <g id="Group_20" data-name="Group 20" transform="translate(-1465 -34)">
+                                              <rect id="Rectangle_155" data-name="Rectangle 155" width="26" height="26" transform="translate(1465 34)" fill="rgba(228,25,11,0)"/>
+                                              <path id="mobile-vibrate" d="M11.048,15.972l-.174-.139-.209-.116-.209-.058a1.158,1.158,0,0,0-1.043.313.963.963,0,0,0-.255.383,1.091,1.091,0,0,0,0,.881,1.24,1.24,0,0,0,.626.626,1.158,1.158,0,0,0,.44.093,1.262,1.262,0,0,0,.452-.093,1.008,1.008,0,0,0,.371-.255,1.078,1.078,0,0,0,.336-.812.975.975,0,0,0-.093-.441,1.079,1.079,0,0,0-.243-.383ZM3.667,9.757a1.158,1.158,0,0,0,.823-.348L9.4,4.492A1.156,1.156,0,0,0,7.769,2.856L2.856,7.773a1.166,1.166,0,0,0,.811,1.983Zm20.485,7.863a1.158,1.158,0,0,0-1.634,0l-4.913,4.917a1.156,1.156,0,1,0,1.634,1.635l4.913-4.859a1.16,1.16,0,0,0,0-1.693Zm.2-6.564A3.481,3.481,0,0,0,23.341,8.6L18.417,3.668a3.566,3.566,0,0,0-4.913,0L3.667,13.514a3.481,3.481,0,0,0,0,4.917L8.592,23.36h0a3.474,3.474,0,0,0,4.913,0l9.837-9.846a3.481,3.481,0,0,0,1.008-2.459Zm-2.653.823-9.825,9.834a1.158,1.158,0,0,1-1.645,0h0L5.313,16.8a1.16,1.16,0,0,1,0-1.647l9.825-9.834a1.158,1.158,0,0,1,1.645,0L21.7,10.232a1.16,1.16,0,0,1,0,1.647Z" transform="translate(1464.481 33.481)" fill="#e4190b"/>
+                                            </g>
+                                          </svg>
                                 </div>
                                 <span class="contact_text">+995 555 544 311</span>
                             </div>
@@ -625,7 +792,9 @@
             </div>
         </div>
     </footer>
-    <script src="../js files/main.js"></script>
+    <script src="js files/main.js"></script>
+    <script src="js files/slider.js"></script>
+    <script src="js files/categories.js"></script>
 </body>
 
 </html>
