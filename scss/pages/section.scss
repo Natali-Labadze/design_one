@@ -442,6 +442,7 @@
                         line-height: 25px;
                         color: $color08;
                         margin: 18px auto 19px auto;
+                        cursor: pointer;
                     }
                 }
             }
@@ -728,6 +729,7 @@
                         }
                         .sidebar_li {
                             margin-bottom: 27px;
+                            cursor: pointer;
                             .sidebar_span {
                                 font-family: 'Helvetica Neue';
                                 font-weight: bold;
@@ -1111,6 +1113,7 @@
                         }
                         .sidebar_li {
                             margin-bottom: 27px;
+                            cursor: pointer;
                             .sidebar_span {
                                 font-family: 'MyriadGEOMtavruliMedium';
                                 font-weight: 500;
@@ -1336,6 +1339,7 @@
                         border-radius: 10px;
                         background-color: $color01;
                         border: none;
+                        cursor: pointer;
                         svg {
                             position: absolute;
                             transform: translate(-50%, -50%);

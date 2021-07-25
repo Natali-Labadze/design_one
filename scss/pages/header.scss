@@ -58,6 +58,7 @@
             .logo {
                 width: 76px;
                 height: 52px;
+                cursor: pointer;
             }
         }
         .overlay_cols {
@@ -412,6 +413,7 @@
             .logo {
                 width: 76px;
                 height: 52px;
+                cursor: pointer;
                 svg {
                     width: 100%;
                     height: 100%;
@@ -424,6 +426,7 @@
                 background-color: $color10;
                 border-radius: 50%;
                 transition: 0.2s linear;
+                cursor: pointer;
                 .search_btn_icon {
                     width: 20px;
                     height: 20px;
