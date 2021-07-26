@@ -1,7 +1,7 @@
-@import '../modules/variable';
-@import '../modules/mixins';
-@import '../basic/reset';
-@import '../basic/font';
+@import './../modules/variable';
+@import './../modules/mixins';
+@import './../basic/font';
+@import './../basic/reset';
 .full_overlay {
     @include display(none);
     .overlay {
@@ -93,7 +93,7 @@
                         font-size: 16px;
                         line-height: 19px;
                         .arrow_icon {
-                            @include display(none);
+                            display: none;
                         }
                     }
                     .dropdown_list {
@@ -197,7 +197,7 @@
             }
         }
         .overlay_second_dropdown {
-            @include display(none);
+            display: none;
             position: relative;
             top: 0;
             left: 20px;
@@ -234,7 +234,7 @@
             }
         }
         .overlay_third_dropdown {
-            @include display(none);
+            display: none;
             position: relative;
             top: 0;
             left: 20px;
@@ -271,7 +271,7 @@
             }
         }
         .overlay_fourth_dropdown {
-            @include display(none);
+            display: none;
             position: relative;
             top: 0;
             left: 20px;
@@ -308,7 +308,7 @@
             }
         }
         .overlay_fifth_dropdown {
-            @include display(none);
+            display: none;
             position: relative;
             top: 0;
             left: 20px;
@@ -345,7 +345,7 @@
             }
         }
         .overlay_sixth_dropdown {
-            @include display(none);
+            display: none;
             position: relative;
             top: 0;
             left: 20px;
@@ -446,7 +446,7 @@
                     box-shadow: 0 0 8px rgba(23, 23, 23, 0.6);
                 }
                 &.search_input_unhide {
-                    @include display(none);
+                    display: none;
                 }
             }
             .search_close_btn {

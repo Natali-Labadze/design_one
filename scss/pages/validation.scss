@@ -1,7 +1,7 @@
-@import '../modules/variable';
-@import '../modules/mixins';
-@import '../basic/reset';
-@import '../basic/font';
+@import './../modules/variable';
+@import './../modules/mixins';
+@import './../basic/font';
+@import './../basic/reset';
 .validation {
     padding-top: 84px;
     padding-bottom: 402px;
@@ -118,7 +118,7 @@
             font-size: $size04;
             line-height: 28px;
             color: $color01;
-            @include display(none);
+            display: none;
             @include tablet {
                 margin-top: 40px;
                 width: 334px;

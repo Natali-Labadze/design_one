@@ -1,7 +1,7 @@
-@import '../modules/variable';
-@import '../modules/mixins';
-@import '../basic/reset';
-@import '../basic/font';
+@import './../modules/variable';
+@import './../modules/mixins';
+@import './../basic/reset';
+@import './../basic/font';
 // container width
 .container {
     width: 1440px;
@@ -23,9 +23,9 @@
     @include display(flex);
     @include flex(center, center);
     .pagination_list {
-        @include display(flex);
+        display: flex;
         .pagination_li {
-            @include display(flex);
+            display: flex;
             justify-content: center;
             align-items: center;
             width: 35px;

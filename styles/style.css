@@ -454,6 +454,70 @@ a {
     .pagination {
       padding-bottom: 40px; } }
 
+@font-face {
+  font-family: 'FiraGO Book';
+  src: url("../fonts/FiraGO-Book.eot");
+  src: url("../fonts/FiraGO-Book.eot?#iefix") format("../fonts/embedded-opentype"), url("../fonts/FiraGO-Book.woff2") format("../fonts/woff2"), url("../fonts/FiraGO-Book.woff") format("woff"), url("../fonts/FiraGO-Book.ttf") format("truetype"), url("../fonts/FiraGO-Book.svg#FiraGO-Book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-Bold.eot");
+  src: url("../fonts/FiraGO-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Bold.woff2") format("woff2"), url("../fonts/FiraGO-Bold.woff") format("woff"), url("../fonts/FiraGO-Bold.ttf") format("truetype"), url("../fonts/FiraGO-Bold.svg#FiraGO-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-Medium.eot");
+  src: url("../fonts/FiraGO-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Medium.woff2") format("woff2"), url("../fonts/FiraGO-Medium.woff") format("woff"), url("../fonts/FiraGO-Medium.ttf") format("truetype"), url("../fonts/FiraGO-Medium.svg#FiraGO-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-MediumItalic.eot");
+  src: url("../fonts/FiraGO-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-MediumItalic.woff2") format("woff2"), url("../fonts/FiraGO-MediumItalic.woff") format("woff"), url("../fonts/FiraGO-MediumItalic.ttf") format("truetype"), url("../fonts/FiraGO-MediumItalic.svg#FiraGO-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-Regular.eot");
+  src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Regular.woff2") format("woff2"), url("../fonts/FiraGO-Regular.woff") format("woff"), url("../fonts/FiraGO-Regular.ttf") format("truetype"), url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-Bold.eot");
+  src: url("../fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-SemiBold.eot");
+  src: url("../fonts/FiraGO-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-SemiBold.woff2") format("woff2"), url("../fonts/FiraGO-SemiBold.woff") format("woff"), url("../fonts/FiraGO-SemiBold.ttf") format("truetype"), url("../fonts/FiraGO-SemiBold.svg#FiraGO-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'MyriadGEOMtavruliMedium';
+  src: url("../fonts/MyriadGEOMtavruliMedium.eot");
+  src: url("../fonts/MyriadGEOMtavruliMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadGEOMtavruliMedium.woff2") format("woff2"), url("../fonts/MyriadGEOMtavruliMedium.woff") format("woff"), url("../fonts/MyriadGEOMtavruliMedium.ttf") format("truetype"), url("../fonts/MyriadGEOMtavruliMedium.svg#MyriadGEOMtavruliMedium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -588,70 +652,6 @@ a {
 
 * {
   box-sizing: border-box; }
-
-@font-face {
-  font-family: 'FiraGO Book';
-  src: url("../fonts/FiraGO-Book.eot");
-  src: url("../fonts/FiraGO-Book.eot?#iefix") format("../fonts/embedded-opentype"), url("../fonts/FiraGO-Book.woff2") format("../fonts/woff2"), url("../fonts/FiraGO-Book.woff") format("woff"), url("../fonts/FiraGO-Book.ttf") format("truetype"), url("../fonts/FiraGO-Book.svg#FiraGO-Book") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-Bold.eot");
-  src: url("../fonts/FiraGO-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Bold.woff2") format("woff2"), url("../fonts/FiraGO-Bold.woff") format("woff"), url("../fonts/FiraGO-Bold.ttf") format("truetype"), url("../fonts/FiraGO-Bold.svg#FiraGO-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-Medium.eot");
-  src: url("../fonts/FiraGO-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Medium.woff2") format("woff2"), url("../fonts/FiraGO-Medium.woff") format("woff"), url("../fonts/FiraGO-Medium.ttf") format("truetype"), url("../fonts/FiraGO-Medium.svg#FiraGO-Medium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-MediumItalic.eot");
-  src: url("../fonts/FiraGO-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-MediumItalic.woff2") format("woff2"), url("../fonts/FiraGO-MediumItalic.woff") format("woff"), url("../fonts/FiraGO-MediumItalic.ttf") format("truetype"), url("../fonts/FiraGO-MediumItalic.svg#FiraGO-MediumItalic") format("svg");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-Regular.eot");
-  src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Regular.woff2") format("woff2"), url("../fonts/FiraGO-Regular.woff") format("woff"), url("../fonts/FiraGO-Regular.ttf") format("truetype"), url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url("../fonts/HelveticaNeue-Bold.eot");
-  src: url("../fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-SemiBold.eot");
-  src: url("../fonts/FiraGO-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-SemiBold.woff2") format("woff2"), url("../fonts/FiraGO-SemiBold.woff") format("woff"), url("../fonts/FiraGO-SemiBold.ttf") format("truetype"), url("../fonts/FiraGO-SemiBold.svg#FiraGO-SemiBold") format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'MyriadGEOMtavruliMedium';
-  src: url("../fonts/MyriadGEOMtavruliMedium.eot");
-  src: url("../fonts/MyriadGEOMtavruliMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadGEOMtavruliMedium.woff2") format("woff2"), url("../fonts/MyriadGEOMtavruliMedium.woff") format("woff"), url("../fonts/MyriadGEOMtavruliMedium.ttf") format("truetype"), url("../fonts/MyriadGEOMtavruliMedium.svg#MyriadGEOMtavruliMedium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
 
 .map_contact {
   height: 837px;
@@ -690,6 +690,70 @@ a {
       height: 720px;
       width: 100%; } }
 
+@font-face {
+  font-family: 'FiraGO Book';
+  src: url("../fonts/FiraGO-Book.eot");
+  src: url("../fonts/FiraGO-Book.eot?#iefix") format("../fonts/embedded-opentype"), url("../fonts/FiraGO-Book.woff2") format("../fonts/woff2"), url("../fonts/FiraGO-Book.woff") format("woff"), url("../fonts/FiraGO-Book.ttf") format("truetype"), url("../fonts/FiraGO-Book.svg#FiraGO-Book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-Bold.eot");
+  src: url("../fonts/FiraGO-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Bold.woff2") format("woff2"), url("../fonts/FiraGO-Bold.woff") format("woff"), url("../fonts/FiraGO-Bold.ttf") format("truetype"), url("../fonts/FiraGO-Bold.svg#FiraGO-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-Medium.eot");
+  src: url("../fonts/FiraGO-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Medium.woff2") format("woff2"), url("../fonts/FiraGO-Medium.woff") format("woff"), url("../fonts/FiraGO-Medium.ttf") format("truetype"), url("../fonts/FiraGO-Medium.svg#FiraGO-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-MediumItalic.eot");
+  src: url("../fonts/FiraGO-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-MediumItalic.woff2") format("woff2"), url("../fonts/FiraGO-MediumItalic.woff") format("woff"), url("../fonts/FiraGO-MediumItalic.ttf") format("truetype"), url("../fonts/FiraGO-MediumItalic.svg#FiraGO-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-Regular.eot");
+  src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Regular.woff2") format("woff2"), url("../fonts/FiraGO-Regular.woff") format("woff"), url("../fonts/FiraGO-Regular.ttf") format("truetype"), url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-Bold.eot");
+  src: url("../fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-SemiBold.eot");
+  src: url("../fonts/FiraGO-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-SemiBold.woff2") format("woff2"), url("../fonts/FiraGO-SemiBold.woff") format("woff"), url("../fonts/FiraGO-SemiBold.ttf") format("truetype"), url("../fonts/FiraGO-SemiBold.svg#FiraGO-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'MyriadGEOMtavruliMedium';
+  src: url("../fonts/MyriadGEOMtavruliMedium.eot");
+  src: url("../fonts/MyriadGEOMtavruliMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadGEOMtavruliMedium.woff2") format("woff2"), url("../fonts/MyriadGEOMtavruliMedium.woff") format("woff"), url("../fonts/MyriadGEOMtavruliMedium.ttf") format("truetype"), url("../fonts/MyriadGEOMtavruliMedium.svg#MyriadGEOMtavruliMedium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -824,70 +888,6 @@ a {
 
 * {
   box-sizing: border-box; }
-
-@font-face {
-  font-family: 'FiraGO Book';
-  src: url("../fonts/FiraGO-Book.eot");
-  src: url("../fonts/FiraGO-Book.eot?#iefix") format("../fonts/embedded-opentype"), url("../fonts/FiraGO-Book.woff2") format("../fonts/woff2"), url("../fonts/FiraGO-Book.woff") format("woff"), url("../fonts/FiraGO-Book.ttf") format("truetype"), url("../fonts/FiraGO-Book.svg#FiraGO-Book") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-Bold.eot");
-  src: url("../fonts/FiraGO-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Bold.woff2") format("woff2"), url("../fonts/FiraGO-Bold.woff") format("woff"), url("../fonts/FiraGO-Bold.ttf") format("truetype"), url("../fonts/FiraGO-Bold.svg#FiraGO-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-Medium.eot");
-  src: url("../fonts/FiraGO-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Medium.woff2") format("woff2"), url("../fonts/FiraGO-Medium.woff") format("woff"), url("../fonts/FiraGO-Medium.ttf") format("truetype"), url("../fonts/FiraGO-Medium.svg#FiraGO-Medium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-MediumItalic.eot");
-  src: url("../fonts/FiraGO-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-MediumItalic.woff2") format("woff2"), url("../fonts/FiraGO-MediumItalic.woff") format("woff"), url("../fonts/FiraGO-MediumItalic.ttf") format("truetype"), url("../fonts/FiraGO-MediumItalic.svg#FiraGO-MediumItalic") format("svg");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-Regular.eot");
-  src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Regular.woff2") format("woff2"), url("../fonts/FiraGO-Regular.woff") format("woff"), url("../fonts/FiraGO-Regular.ttf") format("truetype"), url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url("../fonts/HelveticaNeue-Bold.eot");
-  src: url("../fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-SemiBold.eot");
-  src: url("../fonts/FiraGO-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-SemiBold.woff2") format("woff2"), url("../fonts/FiraGO-SemiBold.woff") format("woff"), url("../fonts/FiraGO-SemiBold.ttf") format("truetype"), url("../fonts/FiraGO-SemiBold.svg#FiraGO-SemiBold") format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'MyriadGEOMtavruliMedium';
-  src: url("../fonts/MyriadGEOMtavruliMedium.eot");
-  src: url("../fonts/MyriadGEOMtavruliMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadGEOMtavruliMedium.woff2") format("woff2"), url("../fonts/MyriadGEOMtavruliMedium.woff") format("woff"), url("../fonts/MyriadGEOMtavruliMedium.ttf") format("truetype"), url("../fonts/MyriadGEOMtavruliMedium.svg#MyriadGEOMtavruliMedium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
 
 .validation {
   padding-top: 84px;
@@ -1030,6 +1030,70 @@ a {
       padding-top: 36px;
       padding-bottom: 90px; } }
 
+@font-face {
+  font-family: 'FiraGO Book';
+  src: url("../fonts/FiraGO-Book.eot");
+  src: url("../fonts/FiraGO-Book.eot?#iefix") format("../fonts/embedded-opentype"), url("../fonts/FiraGO-Book.woff2") format("../fonts/woff2"), url("../fonts/FiraGO-Book.woff") format("woff"), url("../fonts/FiraGO-Book.ttf") format("truetype"), url("../fonts/FiraGO-Book.svg#FiraGO-Book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-Bold.eot");
+  src: url("../fonts/FiraGO-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Bold.woff2") format("woff2"), url("../fonts/FiraGO-Bold.woff") format("woff"), url("../fonts/FiraGO-Bold.ttf") format("truetype"), url("../fonts/FiraGO-Bold.svg#FiraGO-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-Medium.eot");
+  src: url("../fonts/FiraGO-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Medium.woff2") format("woff2"), url("../fonts/FiraGO-Medium.woff") format("woff"), url("../fonts/FiraGO-Medium.ttf") format("truetype"), url("../fonts/FiraGO-Medium.svg#FiraGO-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-MediumItalic.eot");
+  src: url("../fonts/FiraGO-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-MediumItalic.woff2") format("woff2"), url("../fonts/FiraGO-MediumItalic.woff") format("woff"), url("../fonts/FiraGO-MediumItalic.ttf") format("truetype"), url("../fonts/FiraGO-MediumItalic.svg#FiraGO-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-Regular.eot");
+  src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Regular.woff2") format("woff2"), url("../fonts/FiraGO-Regular.woff") format("woff"), url("../fonts/FiraGO-Regular.ttf") format("truetype"), url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-Bold.eot");
+  src: url("../fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-SemiBold.eot");
+  src: url("../fonts/FiraGO-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-SemiBold.woff2") format("woff2"), url("../fonts/FiraGO-SemiBold.woff") format("woff"), url("../fonts/FiraGO-SemiBold.ttf") format("truetype"), url("../fonts/FiraGO-SemiBold.svg#FiraGO-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'MyriadGEOMtavruliMedium';
+  src: url("../fonts/MyriadGEOMtavruliMedium.eot");
+  src: url("../fonts/MyriadGEOMtavruliMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadGEOMtavruliMedium.woff2") format("woff2"), url("../fonts/MyriadGEOMtavruliMedium.woff") format("woff"), url("../fonts/MyriadGEOMtavruliMedium.ttf") format("truetype"), url("../fonts/MyriadGEOMtavruliMedium.svg#MyriadGEOMtavruliMedium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -1164,70 +1228,6 @@ a {
 
 * {
   box-sizing: border-box; }
-
-@font-face {
-  font-family: 'FiraGO Book';
-  src: url("../fonts/FiraGO-Book.eot");
-  src: url("../fonts/FiraGO-Book.eot?#iefix") format("../fonts/embedded-opentype"), url("../fonts/FiraGO-Book.woff2") format("../fonts/woff2"), url("../fonts/FiraGO-Book.woff") format("woff"), url("../fonts/FiraGO-Book.ttf") format("truetype"), url("../fonts/FiraGO-Book.svg#FiraGO-Book") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-Bold.eot");
-  src: url("../fonts/FiraGO-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Bold.woff2") format("woff2"), url("../fonts/FiraGO-Bold.woff") format("woff"), url("../fonts/FiraGO-Bold.ttf") format("truetype"), url("../fonts/FiraGO-Bold.svg#FiraGO-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-Medium.eot");
-  src: url("../fonts/FiraGO-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Medium.woff2") format("woff2"), url("../fonts/FiraGO-Medium.woff") format("woff"), url("../fonts/FiraGO-Medium.ttf") format("truetype"), url("../fonts/FiraGO-Medium.svg#FiraGO-Medium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-MediumItalic.eot");
-  src: url("../fonts/FiraGO-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-MediumItalic.woff2") format("woff2"), url("../fonts/FiraGO-MediumItalic.woff") format("woff"), url("../fonts/FiraGO-MediumItalic.ttf") format("truetype"), url("../fonts/FiraGO-MediumItalic.svg#FiraGO-MediumItalic") format("svg");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-Regular.eot");
-  src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Regular.woff2") format("woff2"), url("../fonts/FiraGO-Regular.woff") format("woff"), url("../fonts/FiraGO-Regular.ttf") format("truetype"), url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url("../fonts/HelveticaNeue-Bold.eot");
-  src: url("../fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-SemiBold.eot");
-  src: url("../fonts/FiraGO-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-SemiBold.woff2") format("woff2"), url("../fonts/FiraGO-SemiBold.woff") format("woff"), url("../fonts/FiraGO-SemiBold.ttf") format("truetype"), url("../fonts/FiraGO-SemiBold.svg#FiraGO-SemiBold") format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'MyriadGEOMtavruliMedium';
-  src: url("../fonts/MyriadGEOMtavruliMedium.eot");
-  src: url("../fonts/MyriadGEOMtavruliMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadGEOMtavruliMedium.woff2") format("woff2"), url("../fonts/MyriadGEOMtavruliMedium.woff") format("woff"), url("../fonts/MyriadGEOMtavruliMedium.ttf") format("truetype"), url("../fonts/MyriadGEOMtavruliMedium.svg#MyriadGEOMtavruliMedium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
 
 .swiper-container {
   width: 100%;
@@ -2145,12 +2145,12 @@ a {
           @media (max-width: 991px) {
             .base_categories .category_section .category_block .categories .category {
               padding: 10px;
-              margin-bottom: 10px; } }
+              margin-bottom: 10px; }
+              .base_categories .category_section .category_block .categories .category:nth-child(3n) {
+                margin-bottom: 0; } }
           @media (max-width: 767px) {
             .base_categories .category_section .category_block .categories .category {
               width: 100%; }
-              .base_categories .category_section .category_block .categories .category:nth-child(3n) {
-                margin-bottom: 0px; }
               .base_categories .category_section .category_block .categories .category:nth-child(4n), .base_categories .category_section .category_block .categories .category:nth-child(5n), .base_categories .category_section .category_block .categories .category:nth-child(6n) {
                 display: none; } }
           .base_categories .category_section .category_block .categories .category:hover {
@@ -2160,9 +2160,7 @@ a {
             margin-bottom: 30px; } }
       @media (max-width: 991px) {
         .base_categories .category_section .category_block {
-          margin-top: 40px; }
-          .base_categories .category_section .category_block.change_margin {
-            margin-top: 26px; } }
+          margin-top: 40px; } }
     @media (max-width: 991px) {
       .base_categories .category_section {
         flex-wrap: wrap; } }
@@ -2669,6 +2667,70 @@ a {
       margin-bottom: 40px;
       margin-top: 36px; } }
 
+@font-face {
+  font-family: 'FiraGO Book';
+  src: url("../fonts/FiraGO-Book.eot");
+  src: url("../fonts/FiraGO-Book.eot?#iefix") format("../fonts/embedded-opentype"), url("../fonts/FiraGO-Book.woff2") format("../fonts/woff2"), url("../fonts/FiraGO-Book.woff") format("woff"), url("../fonts/FiraGO-Book.ttf") format("truetype"), url("../fonts/FiraGO-Book.svg#FiraGO-Book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-Bold.eot");
+  src: url("../fonts/FiraGO-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Bold.woff2") format("woff2"), url("../fonts/FiraGO-Bold.woff") format("woff"), url("../fonts/FiraGO-Bold.ttf") format("truetype"), url("../fonts/FiraGO-Bold.svg#FiraGO-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-Medium.eot");
+  src: url("../fonts/FiraGO-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Medium.woff2") format("woff2"), url("../fonts/FiraGO-Medium.woff") format("woff"), url("../fonts/FiraGO-Medium.ttf") format("truetype"), url("../fonts/FiraGO-Medium.svg#FiraGO-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-MediumItalic.eot");
+  src: url("../fonts/FiraGO-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-MediumItalic.woff2") format("woff2"), url("../fonts/FiraGO-MediumItalic.woff") format("woff"), url("../fonts/FiraGO-MediumItalic.ttf") format("truetype"), url("../fonts/FiraGO-MediumItalic.svg#FiraGO-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-Regular.eot");
+  src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Regular.woff2") format("woff2"), url("../fonts/FiraGO-Regular.woff") format("woff"), url("../fonts/FiraGO-Regular.ttf") format("truetype"), url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-Bold.eot");
+  src: url("../fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-SemiBold.eot");
+  src: url("../fonts/FiraGO-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-SemiBold.woff2") format("woff2"), url("../fonts/FiraGO-SemiBold.woff") format("woff"), url("../fonts/FiraGO-SemiBold.ttf") format("truetype"), url("../fonts/FiraGO-SemiBold.svg#FiraGO-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'MyriadGEOMtavruliMedium';
+  src: url("../fonts/MyriadGEOMtavruliMedium.eot");
+  src: url("../fonts/MyriadGEOMtavruliMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadGEOMtavruliMedium.woff2") format("woff2"), url("../fonts/MyriadGEOMtavruliMedium.woff") format("woff"), url("../fonts/MyriadGEOMtavruliMedium.ttf") format("truetype"), url("../fonts/MyriadGEOMtavruliMedium.svg#MyriadGEOMtavruliMedium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -2803,70 +2865,6 @@ a {
 
 * {
   box-sizing: border-box; }
-
-@font-face {
-  font-family: 'FiraGO Book';
-  src: url("../fonts/FiraGO-Book.eot");
-  src: url("../fonts/FiraGO-Book.eot?#iefix") format("../fonts/embedded-opentype"), url("../fonts/FiraGO-Book.woff2") format("../fonts/woff2"), url("../fonts/FiraGO-Book.woff") format("woff"), url("../fonts/FiraGO-Book.ttf") format("truetype"), url("../fonts/FiraGO-Book.svg#FiraGO-Book") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-Bold.eot");
-  src: url("../fonts/FiraGO-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Bold.woff2") format("woff2"), url("../fonts/FiraGO-Bold.woff") format("woff"), url("../fonts/FiraGO-Bold.ttf") format("truetype"), url("../fonts/FiraGO-Bold.svg#FiraGO-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-Medium.eot");
-  src: url("../fonts/FiraGO-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Medium.woff2") format("woff2"), url("../fonts/FiraGO-Medium.woff") format("woff"), url("../fonts/FiraGO-Medium.ttf") format("truetype"), url("../fonts/FiraGO-Medium.svg#FiraGO-Medium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-MediumItalic.eot");
-  src: url("../fonts/FiraGO-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-MediumItalic.woff2") format("woff2"), url("../fonts/FiraGO-MediumItalic.woff") format("woff"), url("../fonts/FiraGO-MediumItalic.ttf") format("truetype"), url("../fonts/FiraGO-MediumItalic.svg#FiraGO-MediumItalic") format("svg");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-Regular.eot");
-  src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Regular.woff2") format("woff2"), url("../fonts/FiraGO-Regular.woff") format("woff"), url("../fonts/FiraGO-Regular.ttf") format("truetype"), url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url("../fonts/HelveticaNeue-Bold.eot");
-  src: url("../fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-SemiBold.eot");
-  src: url("../fonts/FiraGO-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-SemiBold.woff2") format("woff2"), url("../fonts/FiraGO-SemiBold.woff") format("woff"), url("../fonts/FiraGO-SemiBold.ttf") format("truetype"), url("../fonts/FiraGO-SemiBold.svg#FiraGO-SemiBold") format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'MyriadGEOMtavruliMedium';
-  src: url("../fonts/MyriadGEOMtavruliMedium.eot");
-  src: url("../fonts/MyriadGEOMtavruliMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadGEOMtavruliMedium.woff2") format("woff2"), url("../fonts/MyriadGEOMtavruliMedium.woff") format("woff"), url("../fonts/MyriadGEOMtavruliMedium.ttf") format("truetype"), url("../fonts/MyriadGEOMtavruliMedium.svg#MyriadGEOMtavruliMedium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
 
 .full_overlay {
   display: none; }
@@ -3603,6 +3601,70 @@ a {
     .header_wrapper {
       display: none; } }
 
+@font-face {
+  font-family: 'FiraGO Book';
+  src: url("../fonts/FiraGO-Book.eot");
+  src: url("../fonts/FiraGO-Book.eot?#iefix") format("../fonts/embedded-opentype"), url("../fonts/FiraGO-Book.woff2") format("../fonts/woff2"), url("../fonts/FiraGO-Book.woff") format("woff"), url("../fonts/FiraGO-Book.ttf") format("truetype"), url("../fonts/FiraGO-Book.svg#FiraGO-Book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-Bold.eot");
+  src: url("../fonts/FiraGO-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Bold.woff2") format("woff2"), url("../fonts/FiraGO-Bold.woff") format("woff"), url("../fonts/FiraGO-Bold.ttf") format("truetype"), url("../fonts/FiraGO-Bold.svg#FiraGO-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-Medium.eot");
+  src: url("../fonts/FiraGO-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Medium.woff2") format("woff2"), url("../fonts/FiraGO-Medium.woff") format("woff"), url("../fonts/FiraGO-Medium.ttf") format("truetype"), url("../fonts/FiraGO-Medium.svg#FiraGO-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-MediumItalic.eot");
+  src: url("../fonts/FiraGO-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-MediumItalic.woff2") format("woff2"), url("../fonts/FiraGO-MediumItalic.woff") format("woff"), url("../fonts/FiraGO-MediumItalic.ttf") format("truetype"), url("../fonts/FiraGO-MediumItalic.svg#FiraGO-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-Regular.eot");
+  src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Regular.woff2") format("woff2"), url("../fonts/FiraGO-Regular.woff") format("woff"), url("../fonts/FiraGO-Regular.ttf") format("truetype"), url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-Bold.eot");
+  src: url("../fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO';
+  src: url("../fonts/FiraGO-SemiBold.eot");
+  src: url("../fonts/FiraGO-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-SemiBold.woff2") format("woff2"), url("../fonts/FiraGO-SemiBold.woff") format("woff"), url("../fonts/FiraGO-SemiBold.ttf") format("truetype"), url("../fonts/FiraGO-SemiBold.svg#FiraGO-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'MyriadGEOMtavruliMedium';
+  src: url("../fonts/MyriadGEOMtavruliMedium.eot");
+  src: url("../fonts/MyriadGEOMtavruliMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadGEOMtavruliMedium.woff2") format("woff2"), url("../fonts/MyriadGEOMtavruliMedium.woff") format("woff"), url("../fonts/MyriadGEOMtavruliMedium.ttf") format("truetype"), url("../fonts/MyriadGEOMtavruliMedium.svg#MyriadGEOMtavruliMedium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -3737,70 +3799,6 @@ a {
 
 * {
   box-sizing: border-box; }
-
-@font-face {
-  font-family: 'FiraGO Book';
-  src: url("../fonts/FiraGO-Book.eot");
-  src: url("../fonts/FiraGO-Book.eot?#iefix") format("../fonts/embedded-opentype"), url("../fonts/FiraGO-Book.woff2") format("../fonts/woff2"), url("../fonts/FiraGO-Book.woff") format("woff"), url("../fonts/FiraGO-Book.ttf") format("truetype"), url("../fonts/FiraGO-Book.svg#FiraGO-Book") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-Bold.eot");
-  src: url("../fonts/FiraGO-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Bold.woff2") format("woff2"), url("../fonts/FiraGO-Bold.woff") format("woff"), url("../fonts/FiraGO-Bold.ttf") format("truetype"), url("../fonts/FiraGO-Bold.svg#FiraGO-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-Medium.eot");
-  src: url("../fonts/FiraGO-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Medium.woff2") format("woff2"), url("../fonts/FiraGO-Medium.woff") format("woff"), url("../fonts/FiraGO-Medium.ttf") format("truetype"), url("../fonts/FiraGO-Medium.svg#FiraGO-Medium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-MediumItalic.eot");
-  src: url("../fonts/FiraGO-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-MediumItalic.woff2") format("woff2"), url("../fonts/FiraGO-MediumItalic.woff") format("woff"), url("../fonts/FiraGO-MediumItalic.ttf") format("truetype"), url("../fonts/FiraGO-MediumItalic.svg#FiraGO-MediumItalic") format("svg");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-Regular.eot");
-  src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Regular.woff2") format("woff2"), url("../fonts/FiraGO-Regular.woff") format("woff"), url("../fonts/FiraGO-Regular.ttf") format("truetype"), url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url("../fonts/HelveticaNeue-Bold.eot");
-  src: url("../fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'FiraGO';
-  src: url("../fonts/FiraGO-SemiBold.eot");
-  src: url("../fonts/FiraGO-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-SemiBold.woff2") format("woff2"), url("../fonts/FiraGO-SemiBold.woff") format("woff"), url("../fonts/FiraGO-SemiBold.ttf") format("truetype"), url("../fonts/FiraGO-SemiBold.svg#FiraGO-SemiBold") format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'MyriadGEOMtavruliMedium';
-  src: url("../fonts/MyriadGEOMtavruliMedium.eot");
-  src: url("../fonts/MyriadGEOMtavruliMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadGEOMtavruliMedium.woff2") format("woff2"), url("../fonts/MyriadGEOMtavruliMedium.woff") format("woff"), url("../fonts/MyriadGEOMtavruliMedium.ttf") format("truetype"), url("../fonts/MyriadGEOMtavruliMedium.svg#MyriadGEOMtavruliMedium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
 
 .footer_wrapper {
   width: 100%;
