@@ -1056,9 +1056,6 @@
                     @include tablet {
                         padding: 10px;
                         margin-bottom: 10px;
-                        &:nth-child(3n) {
-                            margin-bottom: 0;
-                        }
                     }
                     @include mobile {
                         width: 100%;
@@ -1066,6 +1063,9 @@
                         &:nth-child(5n),
                         &:nth-child(6n) {
                             @include display(none);
+                        }
+                        &:nth-child(3n) {
+                            margin-bottom: 0;
                         }
                     }
                     &:hover {
@@ -1078,6 +1078,9 @@
             }
             @include tablet {
                 margin-top: 40px;
+                &.tablet_margin_top {
+                    margin-top: 26px;
+                }
             }
         }
         @include tablet {
