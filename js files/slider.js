@@ -1,22 +1,22 @@
 var x = 1; //initializes counter
 function changePicture() {
     if (x == 1) { //if the counter is at 1
-        document.getElementById("imgToChange").src = "../images/card_02.png";
+        document.getElementById("imgToChange").src = "./images/card_02.png";
         document.getElementById("slide_img_1").classList.add("active");
         document.getElementById("slide_img_4").classList.remove("active");
         x++; //increments the counter to 2
     } else if (x == 2) { //if this is the 2nd click
-        document.getElementById("imgToChange").src = "../images/card_03.png";
+        document.getElementById("imgToChange").src = "./images/card_03.png";
         document.getElementById("slide_img_2").classList.add("active");
         document.getElementById("slide_img_1").classList.remove("active");
         x++; //increments counter to 3
     } else if (x == 3) { //if the counter is 3
-        document.getElementById("imgToChange").src = "../images/card_04.png";
+        document.getElementById("imgToChange").src = "./images/card_04.png";
         document.getElementById("slide_img_3").classList.add("active");
         document.getElementById("slide_img_2").classList.remove("active");
         x++;
     } else if (x == 4) { //if the counter is 4
-        document.getElementById("imgToChange").src = "../images/card_07.png";
+        document.getElementById("imgToChange").src = "./images/card_07.png";
         document.getElementById("slide_img_4").classList.add("active");
         document.getElementById("slide_img_3").classList.remove("active");
         x = 1;

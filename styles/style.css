@@ -1620,7 +1620,8 @@ a {
           margin: 0 auto;
           display: block;
           background-color: #E4190B;
-          border: none; }
+          border: none;
+          cursor: pointer; }
           .section_part .middle_position .about_us_info .text .more:hover {
             opacity: 0.8; }
           .section_part .middle_position .about_us_info .text .more .more_span {
@@ -1630,8 +1631,7 @@ a {
             font-size: 16px;
             line-height: 25px;
             color: #FFFFFF;
-            margin: 18px auto 19px auto;
-            cursor: pointer; }
+            margin: 18px auto 19px auto; }
       .section_part .middle_position .about_us_info .first_image {
         position: absolute;
         top: 60px;
@@ -1860,8 +1860,7 @@ a {
       .base_categories .category_section .sidebar .sidebar_menu_box .saidbar_menu .sidebar_list .hassubmenu.show .dropdown_menu {
         display: block; }
       .base_categories .category_section .sidebar .sidebar_menu_box .saidbar_menu .sidebar_list .sidebar_li {
-        margin-bottom: 27px;
-        cursor: pointer; }
+        margin-bottom: 27px; }
         .base_categories .category_section .sidebar .sidebar_menu_box .saidbar_menu .sidebar_list .sidebar_li .sidebar_span {
           font-family: 'Helvetica Neue';
           font-weight: bold;
@@ -2161,7 +2160,7 @@ a {
       @media (max-width: 991px) {
         .base_categories .category_section .category_block {
           margin-top: 40px; }
-          .base_categories .category_section .category_block.tablet_margin_top {
+          .base_categories .category_section .category_block.mobile {
             margin-top: 26px; } }
     @media (max-width: 991px) {
       .base_categories .category_section {
@@ -2182,8 +2181,7 @@ a {
       .base_categories .products .sidebar .sidebar_menu_box .saidbar_menu .sidebar_list .hassubmenu.show .dropdown_menu {
         display: block; }
       .base_categories .products .sidebar .sidebar_menu_box .saidbar_menu .sidebar_list .sidebar_li {
-        margin-bottom: 27px;
-        cursor: pointer; }
+        margin-bottom: 27px; }
         .base_categories .products .sidebar .sidebar_menu_box .saidbar_menu .sidebar_list .sidebar_li .sidebar_span {
           font-family: 'MyriadGEOMtavruliMedium';
           font-weight: 500;
@@ -2365,8 +2363,7 @@ a {
             height: 70px;
             border-radius: 10px;
             background-color: #E4190B;
-            border: none;
-            cursor: pointer; }
+            border: none; }
             .base_categories .products .product_item .product_info .slide_show .slide_arrow svg {
               position: absolute;
               transform: translate(-50%, -50%); }
@@ -2916,8 +2913,7 @@ a {
           background-color: #242424; }
       .full_overlay .overlay .overlay_header_top .logo {
         width: 76px;
-        height: 52px;
-        cursor: pointer; }
+        height: 52px; }
     .full_overlay .overlay .overlay_cols {
       padding-left: 20px;
       padding-right: 20px;
@@ -3190,8 +3186,7 @@ a {
             fill: #E4190B; }
         .full_overlay .overlay_header_back .logo {
           width: 76px;
-          height: 52px;
-          cursor: pointer; }
+          height: 52px; }
           .full_overlay .overlay_header_back .logo svg {
             width: 100%;
             height: 100%; }
