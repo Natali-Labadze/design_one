@@ -13,12 +13,12 @@ function initMap() {
 
     //listen for click on map
     google.maps.event.addListener(map, 'click', function(event) {
-        addMarker({ coords: event.latLng }, { iconImage: '../images/map_icon.svg' });
+        addMarker({ coords: event.latLng }, { iconImage: './images/map_icon.svg' });
     })
 
     var markers = [{
                 coords: { lat: 41.7076, lng: 44.7628 },
-                iconImage: '../images/map_icon_2.svg',
+                iconImage: './images/map_icon_2.svg',
                 content: `
         <div class="map_content">
             <div class="map_info">
@@ -43,17 +43,17 @@ function initMap() {
             },
             {
                 coords: { lat: 41.7076, lng: 44.7596 },
-                iconImage: "../images/map_icon_2.svg",
+                iconImage: "./images/map_icon_2.svg",
                 content: 'კონტენტი 1'
             },
             {
                 coords: { lat: 41.7086, lng: 44.7559 },
-                iconImage: '../images/map_icon_2.svg',
+                iconImage: './images/map_icon_2.svg',
                 content: 'კონტენტი 2'
             },
             {
                 coords: { lat: 41.7109, lng: 44.7585 },
-                iconImage: "../images/map_icon_2.svg",
+                iconImage: "./images/map_icon_2.svg",
                 content: 'კონტენტი 3'
             },
 
@@ -63,8 +63,8 @@ function initMap() {
         addMarker(markers[i]);
     }
 
-    var icon1 = "../images/map_icon.svg";
-    var icon2 = "../images/map_icon_2.svg";
+    var icon1 = "./images/map_icon.svg";
+    var icon2 = "./images/map_icon_2.svg";
 
     function addMarker(props) {
         var marker = new google.maps.Marker({
